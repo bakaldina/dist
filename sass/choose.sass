@@ -1,0 +1,106 @@
+.choose
+	height: 25.5rem
+	background-color: #fcfcfc
+	padding-top: 3.4rem
+	ul
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		li
+			text-align: center
+			transition: all 0.2s
+			&:hover
+				transform: scale(1.1)
+				span
+					border-bottom: 1px dashed #ffa92d
+					color: #ffa92d
+				span.mobile_hide
+					border-bottom: 0
+					color: #333
+			span
+				border-bottom: 0
+			a
+				font-size: 1.6rem
+				color: #888888
+				text-decoration: none
+	span
+		border-bottom: 1px dashed #888888
+		transition: all 0.2s
+		display: inline-block
+	h6
+		display: inline-block
+		height: 5rem
+		font-size: 1.8rem
+		color: #333
+		font-weight: normal
+		width: 21rem
+		margin-top: 1.5rem
+		line-height: 1.9rem
+		border-bottom: none
+	img
+		height: 9.5rem
+	&-text
+		width: 100%
+@media (max-width: 767px)
+	.choose
+		height: auto
+		padding-top: 0
+		background-color: #FFF
+		position: relative
+		ul
+			display: block
+			width: 100%
+			overflow: visible
+			li
+				display: block
+				text-align: center
+				height: 10rem
+				width: 29rem
+				box-shadow: 0 0 2rem rgba(0,0,0,0.2)
+				border-radius: 1.5rem
+				margin-top: 3rem
+				font-size: 1.8rem
+				margin: 3rem auto 0 auto
+				&:hover
+					span
+						border-bottom: 0
+						color: inherit
+				span
+					border-bottom: 0
+					&:after
+						content: ''
+						display: inline-block
+						width: 1rem
+						height: 1rem
+						background: url(../img/mobile/more.svg) center center no-repeat
+						background-size: cover
+				a
+					color: #ff6600
+
+				img
+					width: 9rem
+					vertical-align: top
+					margin-left: 2rem
+		h6
+			font-size: 1.7rem
+			font-weight: 700
+			display: inline-block
+			width: 17rem
+		&-text
+			display: inline-block
+			width: 16rem
+			margin-left: 1rem
+			padding-right: 1rem
+			text-align: left
+	.mobile
+		&-Xgrey-5
+			top: 0rem
+			left: -0.5rem
+			position: absolute
+			img
+				height: 3rem
+				width: 3rem
+				transform: rotate(-30deg)
+	.noafter
+		&:after
+			display: none!important

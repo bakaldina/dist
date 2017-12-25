@@ -1,0 +1,222 @@
+.navigation
+	background-color: #f7f7f7
+	height: 26.7rem
+	width: 100%
+	&-menu
+		border-bottom: 1px solid #bfbfbf
+		transition: 0.2s
+		ul
+			margin-left: 4.1rem
+			list-style-type: none
+			font-size: 2rem
+			height: 7.7rem
+			line-height: 7.7rem
+			transition: height, line-height 0.2s
+			.active
+				border-bottom: 2px solid #f05a29
+				height: 7.8rem
+				a
+					color: #f05a29
+			li
+				display: inline-block
+				margin-right: 8.2rem
+				&:last-of-type
+					margin-right: 0
+				a
+					color: #333333
+					text-decoration: none
+					&:hover
+						color: #f05a29
+	&-offer
+		border-left: 1px solid #bfbfbf
+		padding-left: 3.3rem
+		display: inline-block
+		height: 12rem
+		span
+			display: block
+			font-size: 2.2rem
+			font-weight: 700
+			width: 21rem
+			margin-bottom: 3.5rem
+			margin-top: 2rem
+			line-height: 2.6rem
+	&-form
+		display: inline-block
+		vertical-align: top
+		margin-top: 2.1rem
+		margin-left: 2.4rem
+		.error
+			border-color: red
+			&:hover, &:focus
+				border-color: red
+		label
+			color: red
+			top: 0.5rem
+			display: block
+			position: absolute
+			font-size: 1.4rem
+		input
+			width: 19.8rem
+			height: 4.3rem
+			line-height: 4.3rem
+			border-radius: 0.5rem
+			padding-left: 1.5rem
+			color: #888888
+			font-size: 1.5rem
+			font-weight: 300
+			outline: none
+			display: block
+			background-color: transparent
+			border: 1px solid #959595
+			&:hover
+				border-color: #7cc576
+			&:focus
+				border-color: #7cc576
+				color: #000
+				font-weight: 400
+			&[type="submit"]
+				background-color: #ff3f3f
+				color: #FFF
+				border: 0
+				font-size: 1.6rem
+				font-weight: 400
+				padding: 0
+				transition: all 0.2s
+				&:hover
+					background-color: #ff624d
+					transform: rotate(-1deg)
+				&:disabled
+					cursor: not-allowed
+			&[type="text"]
+				margin-bottom: 1.3rem
+	&-inputs
+		display: block
+		padding-left: 3.6rem
+		border-left: 1px solid #bfbfbf
+		height: 6.9rem
+		input
+			height: 1.2rem
+			width: 1.2rem
+			vertical-align: top
+		i
+			vertical-align: top
+			font-style: normal
+		label
+			font-size: 1.4rem
+			font-weight: 400
+			color: #444444
+			vertical-align: top
+			line-height: 1.2rem
+			padding-left: 0.8rem
+			color: #444444
+			letter-spacing: -0.09rem
+			a
+				color: #444444
+				border-bottom: 1px solid #444444
+				text-decoration: none
+				vertical-align: top
+				&:hover
+					border-bottom: 0px
+		input
+			outline: none
+.nav-active
+	border-bottom: 3px solid #f05a29
+	height: 7.9rem
+	a
+		color: #f05a29!important
+.cat_s
+	width: 100%
+	position: relative
+	.swiper-container
+		height: 16.8rem
+		padding-top: 4.1rem
+		margin-left: 0
+		font-size: 0
+		.swiper-slide
+			width: 17.4rem
+			text-align: center
+			border-right: 1px solid #ebebeb
+			display: inline-block
+			height: 11.8rem
+			vertical-align: top
+			padding: 0.5rem 0
+			&.cat_s-active
+				a
+					color: #f05a29
+					border-bottom: 2px solid #f05a29	
+			img
+				width: 7.5rem
+				height: 6rem
+				display: block
+				margin: 0 auto 3rem auto
+				transition: transform 0.1s
+			a
+				font-size: 1.8rem
+				text-decoration: none
+				color: #333
+				p
+					height: 5.5rem
+				&:hover
+					color: #f05a29
+					img
+						transform: scale(1.07)
+				&:active
+					border-bottom: 2px solid #f05a29	
+	&-left_b
+		position: absolute
+		height: 100%
+		width: 4rem
+		top: 0
+		left: 0rem
+		background-size: cover!important
+		border: 0
+		outline: 0
+		cursor: pointer
+		vertical-align: top
+		transition: all 0.1s
+		line-height: 19rem
+		z-index: 200
+		background-color: #f7f7f7
+		&-arrow
+			background: url(../img/cat_s/arrow.svg) center center no-repeat
+			width: 100%
+			height: 2rem
+			transform: rotate(180deg)
+			display: inline-block
+			transition: all 0.15s
+		&:hover
+			.cat_s-left_b-arrow
+				background: url(../img/cat_s/arrow_h.svg) center center no-repeat
+				height: 2.2rem
+		&:active
+			.cat_s-left_b-arrow
+				height: 2rem
+	&-right_b
+		position: absolute
+		height: 100%
+		width: 4rem
+		background-size: cover!important
+		top: 0
+		right: 0rem
+		border: 0
+		outline: 0
+		cursor: pointer
+		line-height: 19rem
+		z-index: 200
+		background-color: #f7f7f7
+		&-arrow
+			background: url(../img/cat_s/arrow.svg) center center no-repeat
+			width: 100%
+			height: 2rem
+			display: inline-block
+			transition: all 0.15s
+		&:hover
+			.cat_s-right_b-arrow
+				background: url(../img/cat_s/arrow_h.svg) center center no-repeat
+				height: 2.2rem
+		&:active
+			.cat_s-right_b-arrow
+				height: 2rem
+@media (min-width: 768px) and (max-width: 991px)
+	.navigation-offer label
+		font-size: 1.4rem

@@ -1,0 +1,215 @@
+.feed
+	position: relative
+	&-height
+		height: 52rem
+	p
+		font-size: 1.8rem
+		line-height: 2.6rem
+		color: #333
+	h2
+		margin-top: 4rem
+		font-size: 4.1rem
+		font-weight: 700
+		color: #333
+		text-align: center
+	&-truncate
+		position: absolute
+		background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,1))
+		bottom: 0
+		left: 0
+		height: 7.5rem
+		width: 100%
+		z-index: 100
+	&-otziv
+		min-height: 44rem
+		max-height: 44rem
+		margin-top: 7.7rem
+		box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1)
+		padding: 4.1rem 3.4rem
+		border: 1px solid #ebebeb
+		border-radius: 0.8rem
+		overflow: hidden
+		right: 1.5rem
+		left: 1.5rem
+		transition: max-height 0.4s
+		position: absolute
+		z-index: 200
+		background-color: #FFF
+		&:hover
+			max-height: 90rem
+			.feed-truncate
+				display: none
+			
+	h3
+		font-size: 2.7rem
+		font-weight: 400
+		transition: all 0.2s
+		a
+			color: #333
+		&:hover
+			transform: scale(1.02)
+	h4
+		font-size: 2.1rem
+		text-align: center
+	&-rating
+		margin-top: 1rem
+	&-stars
+		display: inline-block
+		color: #f05a29
+		font-size: 1.9rem
+		font-weight: 700
+		height: 2rem
+		vertical-align: top
+		line-height: 2rem
+		img
+			width: 1.5rem
+			height: 1.5rem
+			vertical-align: top
+	&-number
+		display: inline-block
+		color: #333333
+		font-size: 1.7rem
+		height: 2rem
+		line-height: 1.7rem
+		vertical-align: top
+		margin-left: 1.4rem
+	&-who
+		margin-top: 2.5rem
+		margin-bottom: 3.7rem
+	&-photo
+		display: inline-block
+		width: 8.3rem
+		height: 8.3rem
+		vertical-align: top
+		img
+			width: 8.3rem
+			height: 8.3rem
+			border-radius: 50%
+	&-info
+		display: inline-block
+		margin-left: 2.4rem
+		padding-top: 0.7rem
+		width: 21rem
+	&-name
+		font-size: 2.1rem
+		color: #888888
+	&-time
+		font-size: 1.7rem
+		color: #888888
+	&-more
+		text-align: center
+		margin-top: 5.4rem
+		transition: all 0.2s
+		&:hover
+			text-decoration: underline
+			transform: scale(1.05)
+			a
+				border-bottom: 2px dashed transparent
+		a
+			border-bottom: 2px dashed #ff6600
+			color: #ff6600
+			text-decoration: none
+			font-size: 2.6rem
+@media (min-width: 768px)
+	#feedcollapse
+		display: block
+@media (max-width: 767px)
+	.feed
+		margin-top: 2rem
+		&-truncate
+			height: 5rem
+		&-height
+			height: auto
+		h2
+			font-size: 2.6rem
+			text-align: left
+			font-weight: 400
+		h3
+			font-size: 1.8rem
+		&-otziv
+			margin-top: 2rem
+			height: 29rem
+			padding: 2rem
+			position: relative
+			min-height: 0
+			left: auto
+			right: auto
+			max-height: none
+		&-number
+			font-size: 1.2rem
+			font-weight: 300
+			line-height: 1.2rem
+			margin-left: 0.8rem
+			height: 1.2rem
+			vertical-align: top
+			margin-top: -0.1rem
+		&-stars
+			height: 1rem
+			line-height: 1rem
+			img
+				width: 1rem
+				height: 1rem
+		&-info
+			width: 16rem
+			margin-left: 1.2rem
+		&-photo
+			width: 5.6rem
+			height: 5.6rem
+			img
+				width: 5.6rem
+				height: 5.6rem
+		&-name
+			font-size: 1.4rem
+			font-weight: 700
+		&-time
+			font-weight: 400
+			font-size: 1.2rem
+		&-who
+			margin-top: 0.5rem
+			margin-bottom: 0.5rem
+		p
+			font-size: 1.4rem
+			font-weight: 300
+			color: #333
+			margin-top: 1rem
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			line-height: 1.8rem
+			max-height: 10.8rem
+			-webkit-line-clamp: 6
+			-webkit-box-orient: vertical
+			position: relative
+			a
+				position: absolute
+				top: 9.6rem
+				right: 0rem
+				z-index: 300
+				width: 0.9rem
+				height: 0.9rem
+				background: url(../img/mobile/more.svg) center center no-repeat
+				background-size: cover
+	.collapsehref
+		display: inline-block
+		font-size: 1.6rem
+		color: #ff6600
+		border-bottom: 1px dashed #ff6600
+		margin-left: 50%
+		transform: translateX(-50%)
+		width: 15.9rem
+		text-decoration: none
+		margin-top: 2rem
+		background: url(../img/mobile/arrow_open.svg) right center no-repeat
+		padding-right: 2rem
+		&:hover,&:focus
+			color: #ff6600
+			text-decoration: none
+	.mobile
+		&-tric-2
+			top: 2rem
+			left: 13rem
+			position: absolute
+			img
+				height: 4rem
+				width: 4rem
+				transform: rotate(200deg)

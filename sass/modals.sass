@@ -1,0 +1,605 @@
+.modal
+	padding: 0!important
+	.modal-dialog
+		width: 48.5rem
+	.close
+		border: 0
+		background-color: transparent
+		font-size: 5rem
+		position: absolute
+		top: 0rem
+		right: 2rem
+		outline: none
+		z-index: 400
+	.modal-content
+		padding: 4rem 4.75rem
+	h4
+		color: #333
+		font-size: 2.2rem
+		font-weight: 700
+		text-align: center
+		margin: 0rem auto 2rem auto
+		position: relative
+		z-index: 100
+	input
+		position: relative
+		z-index: 100
+		border-radius: 0.5rem
+		display: block
+		margin: 1rem auto
+		width: 25.9rem
+		height: 4.7rem
+		line-height: 4.7rem
+		border-radius: 0.5rem
+		border: 1px solid #959595
+		font-size: 1.6rem
+		&[type="tel"], &[type="text"], &[type="email"]
+			padding-left: 2rem
+		&:hover,&:focus
+			border-color: #7cc576
+		&[type="submit"]
+			margin-top: 1.8rem
+			border: 0
+			background-color: #ff3f3f
+			color: #fff
+			&:disabled
+				cursor: not-allowed
+			&:hover, &:focus
+				color: #FFF
+				text-decoration: none
+			&:hover
+				background-color: #ff624d
+			&:focus
+				background-color: #ff3f3f
+		&[type="checkbox"], &[type="radio"]
+			height: auto
+			width: auto
+			display: inline-block
+			margin: 0
+		&.error
+			border-color: red
+	label.error
+		display: block
+		color: red
+		text-align: center
+	.personal-error
+		color: red
+		margin: 1rem auto
+		width: 25.9rem
+		border: 1px solid rgba(255,0,0,0.3)
+		background-color: rgba(255,0,0,0.2)
+		text-align: center
+		padding: 1rem
+		display: none
+	.modal-text
+		margin: 3rem auto
+		text-align: center
+		font-size: 1.6rem
+		color: #333
+		position: relative
+		z-index: 100
+	.modal-personal-div
+		width: 26rem
+		font-weight: 300
+		font-size: 1.4rem
+		letter-spacing: -0.7px
+		margin: 0 auto
+		a
+			color: #333
+			border-bottom: 1px dashed #333
+			transition: all 0.2s
+			&:hover
+				border-bottom: 1px dashed transparent
+	.modal-link_button
+		border-radius: 0.5rem
+		display: block
+		margin: 1.8rem auto 1rem auto
+		border: 0
+		width: 25.9rem
+		height: 4.7rem
+		line-height: 4.7rem
+		background-color: #ff3f3f
+		color: #fff
+		text-align: center
+		font-size: 1.6rem
+		position: relative
+		z-index: 100
+		transition: all 0.2s
+		&:hover
+			background-color: #ff624d
+#modal-phone
+	.modal-dialog
+		width: 54.3rem
+	.modal-text
+		width: 37.5rem
+#modal-open
+	.modal-text
+		width: 31rem
+	.modal-open-cloud
+		position: absolute
+		top: 2rem
+		left: 4rem
+		opacity: 0.3
+		z-index: 0
+		img
+			width: 24.8rem
+			height: 9.8rem
+	.modal-open-tric
+		position: absolute
+		bottom: 6rem
+		right: 2rem
+		z-index: 0
+		img
+			width: 3.1rem
+			height: 2.2rem
+#modal-identify
+	.modal-dialog
+		width: 41.3rem
+	.modal-link_button
+		display: inline-block
+		padding: 0 2.5rem
+		width: auto
+		&:nth-of-type(1)
+			margin-right: 4rem
+			margin-left: 1.5rem
+#modal-choose-region
+	.modal-dialog
+		width: 42.6rem
+	.modal-content
+		text-align: center
+	select
+		width: 25.9rem
+		height: 4.7rem
+		display: block
+		margin: 6rem auto 2rem auto
+		position: relative
+		border-radius: 0.5rem
+		padding-left: 2rem
+		-webkit-appearance: none;
+		background-image: url('../img/arrow_down.svg')
+		background-size: 1.5rem
+		background-position: right 1rem center
+		background-repeat: no-repeat
+		line-height: 4.7rem
+		-moz-appearance: none
+		text-indent: 0.01px
+		text-overflow: ''
+		appearance: none!important
+	a
+		color: #f05a29
+		text-align: center
+		border-bottom: 1px dashed #f05a29
+		font-size: 1.5rem
+	.modal-choose-region-item-1
+		position: absolute
+		right: 2rem
+		bottom: 7rem
+	.modal-choose-region-item-2
+		position: absolute
+		right: 7rem
+		top: 10rem
+		img
+			width: 2rem
+			height: 2rem
+			transform: rotate(15deg)
+	.modal-choose-region-item-3
+		position: absolute
+		left: 2rem
+		top: 4.4rem
+		img
+			width: 2rem
+			height: 2rem
+			transform: rotate(-15deg)
+#modal-subscribe
+	h4
+		margin-bottom: 0.5rem
+	.modal-dialog
+		width: 48.5rem
+		&:after
+			content: ''
+			width: 3.5rem
+			height: 2.5rem
+			background: url(../img/bgi/circle-triangle.svg) center center no-repeat
+			background-size: cover
+			bottom: 5.5rem
+			right: 8.5rem
+			position: absolute
+			z-index: 0
+	.modal-text
+		&:nth-of-type(1)
+			width: 31rem
+			margin-top: 0
+		&:nth-of-type(2)
+			width: 38rem
+#region
+	h4
+		text-align: center
+		font-size: 3.4rem
+		margin-bottom: 4rem
+	.modal-dialog
+		width: 120rem
+	.region-cities
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		height: 30rem
+		a
+			width: 19rem
+			height: 4rem
+			line-height: 4rem
+			font-size: 1.8rem
+			color: #f05a29
+			transition: all 0.1s
+			span
+				border-bottom: 1px solid #f05a29
+				transition: all 0.1s
+			&:hover
+				text-decoration: none
+				color: #333
+				span
+					border-bottom: 1px solid transparent
+	.region-countries
+		font-size: 0
+		a
+			width: 16.6%
+			display: inline-block
+			font-size: 1.8rem
+			color: #f05a29
+			height: 4rem
+			line-height: 4rem
+			span
+				border-bottom: 1px solid #f05a29
+				transition: all 0.1s
+			&:hover
+				text-decoration: none
+				color: #333
+				span
+					border-bottom: 1px solid transparent
+#modal-card
+	.modal-dialog
+		width: 74.3rem
+		p
+			font-size: 1.4rem
+			font-weight: 300
+	.modal-card-chosen
+		font-size: 1.8rem
+		font-weight: 700
+		margin-top: 4rem
+	.modal-card-inputs
+		font-size: 0
+		margin-top: 1.6rem
+		position: relative
+		padding-bottom: 2rem
+		padding-top: 2rem
+		height: 14.5rem
+		p
+			margin-bottom: 1.5rem
+		&:after
+			content: ''
+			border-bottom: 2px dashed #f5f5f5
+			width: 100%
+			position: absolute
+			left: 0
+			bottom: 0
+	.modal-card-input_3
+		font-size: 1.6rem
+		display: inline-block
+		width: 33.3%
+		vertical-align: top
+		color: #333
+		span
+			font-weight: 300
+			font-size: 1.4rem
+	.modal-card-input_4
+		font-size: 1.6rem
+		display: inline-block
+		width: 25%
+		color: #333
+		height: 5rem
+		line-height: 5rem
+		input
+			vertical-align: middle
+		img
+			vertical-align: middle
+		&:nth-of-type(1) img
+			height: 3.2rem
+		&:nth-of-type(2) img
+			height: 2.9rem
+		&:nth-of-type(3) img
+			height: 4rem
+		&:nth-of-type(4) img
+			height: 3.9rem
+	.modal-card-footer
+		height: 14rem
+	.modal-card-footer-inputs
+		font-size: 0
+		input
+			width: 18rem
+			display: inline-block
+			vertical-align: top
+			margin: 3.3rem 0.75rem 0 0.75rem
+			border-radius: 0.5rem
+			font-weight: 300
+			&[type=submit]
+				font-size: 1.6rem
+				font-weight: 400
+				width: 21.7rem
+				margin-left: 2.05rem
+	.modal-card-footer-text
+		margin-top: 1.5rem
+	.modal-card-personal-div
+		display: inline-block
+		width: 37.5rem
+		margin-left: 0.75rem
+		vertical-align: top
+		font-weight: 300
+		font-size: 1.4rem
+		color: #444444
+		label
+			height: 1rem
+	.modal-card-footer-sum
+		display: inline-block
+		margin-left: 2.5rem
+		font-size: 1.6rem
+		line-height: 1.6rem
+		color: #333
+		span
+			font-size: 1.2rem
+	.modal-card-footer-sum-left
+			display: inline-block
+	.modal-card-footer-sum-right
+			display: inline-block
+			vertical-align: top
+			color: #ff3f3f
+			font-size: 1.3rem
+			margin-left: 0.5rem
+			span
+				font-size: 2.5rem
+	.modal-personal-div
+		display: inline-block
+		margin-left: 0.75rem
+		width: 37.5rem
+		vertical-align: top
+#modal-discount
+	.modal-dialog
+		width: 60.3rem
+		overflow: hidden
+	.modal-discount-first-step
+		position: relative
+		display: block
+		height: 100%
+		.modal-error
+			width: 90%
+			margin-left: 0
+		.modal-text
+			width: auto
+			margin-top: 0
+			text-align: center
+			font-size: 1.6rem
+			margin-bottom: 4rem
+			span
+				color: #f05a29
+		input
+			width: 19rem
+			margin-left: 0
+			&[type="checkbox"]
+				width: auto
+		.modal-personal-div
+			margin-left: 0
+			width: 19rem
+		form
+			margin-left: 24rem
+		.modal-discount-thanks
+			width: 25.8rem
+			text-align: left
+			margin: 3rem auto 4.5rem 0
+			font-size: 1.4rem
+			a
+				color: #f05a29
+		label
+			width: 25rem
+		.modal-discount-img
+			position: absolute
+			left: -7rem
+			bottom: -2rem
+			width: 28.1rem
+		.modal-open-tric
+			bottom: 12rem
+		.personal-error
+			width: 19rem
+			margin-left: 0
+	.modal-discount-second-step
+		text-align: center
+		display: none
+		position: relative
+		h4
+			margin-bottom: 1rem
+		.modal-text
+			font-size: 1.6rem
+			margin-top: 1rem
+		.modal-button-submit
+			margin: 4rem auto 4rem auto
+			height: 4rem
+			line-height: 4rem
+		.modal-discount-thanks
+			width: 22.8rem
+			margin: 0 auto
+			margin-bottom: 4rem
+			text-align: center
+			a
+				color: #f05a29
+		.modal-discount-second-image
+			width: 48.6rem
+		.modal-open-cloud
+			position: absolute
+			left: 5rem
+			bottom: 0rem
+		.modal-open-tric
+			position: absolute
+			right: 0rem
+			bottom: 6rem
+@media (max-width: 767px)
+	.modal
+		.modal-dialog
+			width: calc(100% - 2rem)!important
+		.modal-content
+			padding: 5rem 1rem 2rem 1rem
+		h4
+			width: auto
+			margin-left: auto
+			font-size: 2rem
+		.modal-text
+			width: 100%!important
+			margin: 2rem auto
+		p
+			width: 90%
+			margin: 1rem auto
+		.modal-discount-thanks
+			text-align: center
+			margin: 2rem auto 4rem auto
+	#region
+		.region-countries
+			a
+				width: 15rem
+	#modal-card
+		.modal-personal-div
+			margin-bottom: 2rem
+		.modal-card-chosen
+			margin-top: 2rem
+			text-align: center
+		.modal-card-inputs
+			height: auto
+			width: 25.9rem
+			margin: 0 auto
+			p
+				margin-bottom: 0
+				margin: 0
+		.modal-card-input_3
+			width: 100%
+			margin-top: 1rem
+			span
+				font-weight: 300
+				font-size: 1.4rem
+		.modal-card-input_4
+			width: 100%
+			color: #333
+			input
+				vertical-align: middle
+			img
+				vertical-align: middle
+			&:nth-of-type(1) img
+				height: 3.2rem
+			&:nth-of-type(2) img
+				height: 2.9rem
+			&:nth-of-type(3) img
+				height: 4rem
+			&:nth-of-type(4) img
+				height: 3.9rem
+		.modal-card-footer
+			height: auto
+		.modal-card-personal-div
+			text-align: center
+			display: block
+		.modal-card-footer-inputs
+			input
+				width: 25.9rem
+				margin: 2rem auto
+				display: block
+				&[type="submit"]
+					width: 25.9rem
+					margin: 2rem auto
+		.modal-card-footer-sum
+			display: block
+			text-align: center
+			margin-left: 0
+	#modal-open
+		.modal-content
+			padding-left: 1rem
+			padding-right: 1rem
+			z-index: -1
+		.modal-open-tric
+			bottom: 2rem
+	#modal-choose-region
+		.modal-dialog
+			width: calc(100% - 2rem)
+		.modal-content
+			padding-left: 1rem
+			padding-right: 1rem
+		.modal-choose-region-item-1
+			display: none
+		.modal-choose-region-item-2
+			top: 12rem
+		.modal-choose-region-item-3
+			top: 1rem
+	#modal-identify
+		text-align: center
+		.modal-link_button
+			display: inline-block
+			&:nth-of-type(1)
+				margin-left: 0
+				margin-right: 2rem
+	#modal-discount
+		.modal-discount-first-step
+			.personal-error
+				width: 25.9rem
+				margin: 1rem auto
+			p
+				width: 100%
+			form
+				margin-left: 0
+			input
+				margin-left: auto
+				width: 25.9rem
+			.modal-personal-div
+				margin: 0 auto
+				width: 25.9rem
+			.modal-discount-thanks
+				margin-left: auto
+				width: 25.9rem
+				text-align: center
+				margin-bottom: 4rem
+		.modal-discount-second-step
+			.modal-discount-second-image
+				width: 90%
+
+@media (max-width: 360px)
+	#region
+		.region-countries
+			a
+				width: 100%
+				text-align: center
+@media (max-width: 479px)
+	#region
+		.modal-dialog
+			width: 100%
+		.modal-content
+			padding: 2rem
+		.region-cities
+			display: block
+			height: auto
+			a
+				display: inline-block
+				width: 100%
+				height: 3rem
+				font-size: 1.8rem
+				color: #f05a29
+				text-align: center
+@media (min-width: 480px) and (max-width: 1100px)
+	#region
+		.modal-dialog
+			width: 100%
+		.modal-content
+			padding: 2rem
+		.region-cities
+			min-height: 82rem
+			a
+				display: inline-block
+				width: 45%
+				height: 3rem
+				font-size: 1.8rem
+				color: #f05a29
+				text-align: left

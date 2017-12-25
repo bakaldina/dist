@@ -1,0 +1,145 @@
+footer
+	position: relative
+	background-color: #ebebeb
+	margin-top: -2rem
+	z-index: 0
+.footer
+	padding: 5rem 10rem
+	.social-links
+		a
+			border-bottom: 0
+	h5
+		font-size: 1.5rem
+		color: #444
+		font-weight: 700
+	ul
+		display: inline-block
+		list-style-type: none
+		font-weight: 300
+		margin-top: 2rem
+		a
+			color: #444
+			transition: all 0.2s
+			border-bottom: 1px dashed transparent
+			&:hover
+				text-decoration: none
+				border-bottom: 1px dashed #888
+		li
+			margin-top: 0.5rem
+			font-size: 1.5rem
+	&-ul-left
+		margin-right: 5.8rem
+	&-ul-right
+		text-align: right
+		font-size: 1.6rem
+		span
+			display: block
+			font-size: 1.5rem
+		ul
+			margin-top: 0
+			text-align: right
+			width: 100%
+			a
+				color: #888
+				border-bottom: 1px dashed #888
+				text-decoration: none
+				transition: all 0.1s
+				&:hover
+					border-bottom: 1px dashed transparent
+	&-app_store
+		display: inline-block
+		margin-bottom: 2rem
+		margin-top: 2rem
+		img
+			width: 13.5rem
+@media (max-width: 767px)
+	footer
+		height: auto
+	.footer
+		padding: 3.4rem 1.5rem 5.2rem 1.5rem
+		background-color: #242424
+		&-left
+			width: 100%
+			margin-top: 1rem
+		&-bottom
+			margin-top: 4rem
+		.social-links
+			padding-left: 0
+			ul
+				padding-left: 0
+				margin: 0 auto
+				display: block
+				text-align: left
+				line-height: 3.4rem
+				padding-left: 2.4rem
+		&-menu
+			text-align: center
+			margin-top: 4rem
+			ul
+				text-align: center
+				border-bottom: 1px solid #343434
+				li
+					display: block
+					height: 5.6rem
+					margin-top: 0
+					border-top: 1px solid #343434
+					line-height: 5.6rem
+					text-align: left
+					padding-left: 2.5rem
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						right: 2.4rem
+						top: 2.4rem
+						width: 0.9rem
+						height: 1.5rem
+						background: url(../img/footer/arrow_footer.svg) center center no-repeat
+						background-size: cover
+				a
+					font-size: 1.6rem
+					font-weight: 400
+					color: #333
+					border-bottom: 0
+					color: #fff
+					font-weight: 300
+		&-ul-right
+			text-align: center
+			padding-left: 0
+			padding-right: 0
+			span
+				display: block
+				margin-top: 3rem
+				margin-bottom: 3rem
+				color: #fff
+				padding-left: 2.5rem
+				padding-right: 2.5rem
+				font-size: 1.4rem
+				font-weight: 300
+		&-call
+			position: fixed
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 5.1rem
+			background-color: rgba(11,11,11,0.7)
+			padding-top: 1rem
+			z-index: 500
+			img
+				display: inline-block
+				width: 2.5rem
+				height: 2.5rem
+				margin-right: 0.9rem
+			&-cent
+				display: block
+				text-align: center
+			&-text
+				display: inline-block
+				color: #FFF
+				font-size: 2rem
+				vertical-align: middle
+	.social-links img, .social-links ul li
+		width: 3.7rem!important
+		height: 3.7rem!important
+	.social-links
+		width: 100%

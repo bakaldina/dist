@@ -1,0 +1,838 @@
+.quest
+	position: relative
+	overflow: hidden
+	width: 100%
+	z-index: 200
+	padding-bottom: 1rem
+	h2
+		font-size: 4.1rem
+		font-weight: 700
+		text-align: center
+		margin-top: 4rem
+		color: #333
+		margin-bottom: 4rem
+	&-line
+		margin-top: 6rem
+	&-item
+		position: relative
+		width: 100%
+		border-radius: 1rem
+		overflow: hidden
+		box-shadow: 0 0 2.5rem 0 rgba(0,0,0,0.15)
+		background-color: #FFF
+		padding-bottom: 5rem
+		height: 64rem
+	&-img
+		position: relative
+		height: 32.6rem
+		overflow: hidden
+		border-top-left-radius: 1.5rem
+		border-top-right-radius: 1.5rem
+		z-index: 0
+		img
+			transition: transform 0.3s
+			height: 100%
+			width: auto
+			position: absolute
+			left: 50%
+			transform: translateX(-50%) 
+			&:hover
+				transform: translateX(-50%) scale(1.05)
+	&-cat
+		font-size: 2rem
+		font-weight: 400
+		color: #FFF
+		text-decoration: none
+		transition: transform 0.2s
+		display: block
+		&:hover
+			transform: rotate(3deg)
+			color: #FFF
+			text-decoration: none
+	&-top
+		position: absolute
+		top: 1.6rem
+		left: 3.1rem
+		font-size: 1.6rem
+		color: #FFF
+		line-height: 2.8rem
+		img
+			width: 1.3rem
+			height: 1.6rem
+			vertical-align: baseline
+	&-price
+		position: absolute
+		top: 1.9rem
+		right: -0.2rem
+		opacity: 0.9
+		background: url(../img/quest/subprice.svg) center left no-repeat
+		background-size: cover
+		color: #FFF
+		font-weight: 700
+		font-size: 1.9rem
+		line-height: 5rem
+		padding-left: 2.5rem
+		padding-right: 1rem
+	&-video
+		position: absolute
+		left: 3rem
+		top: 25.8rem
+		width: 5.4rem
+		height: 5.4rem
+		color: #ec1c23
+		font-size: 1.5rem
+		font-weight: 700
+		background-color: rgba(0,0,0,0.4)
+		border-radius: 50%
+		transition: transform 0.4s
+		cursor: pointer
+		&:hover
+			transform: rotate(120deg)
+		img
+			width: 4rem
+			margin-left: 0.7rem
+			vertical-align: top
+			margin-top: 0.7rem
+			display: inline-block
+		span
+			display: inline-block
+			margin-left: 0.4rem
+			width: 8rem
+			line-height: 1.5rem
+			margin-top: 0.64rem
+			letter-spacing: 0.07rem
+	h5
+		font-size: 2.5rem
+		font-weight: 700
+		margin-top: 1.8rem
+		margin-left: 3rem
+		margin-right: 3rem
+		height: 7rem
+		overflow: hidden
+		a
+			color: #333
+			text-decoration: none
+	&-place
+		font-size: 2rem
+		font-weight: 400
+		margin-left: 3rem
+		margin-top: 1.1rem
+		margin-right: 3rem
+		height: 3rem
+		overflow: hidden
+		padding-left: 2.4rem
+		background: url(../img/quest/compass.svg) left center no-repeat
+		background-size: 2rem
+		&_green
+			color: #029a55
+		&_orange
+			color: #f8a80f
+		&_brown
+			color: #8b3400
+		&_red
+			color: #ec2b2b
+		&_purple
+			color: #a627ae
+	&-chars
+		font-size: 1.7rem
+		color: #333
+		position: absolute
+		bottom: 7.8rem
+		height: 7.9rem
+		left: 0
+		span:nth-child(1)
+			width: 18rem
+			margin-left: 3rem
+		span:nth-child(3)
+			width: 18rem
+			margin-left: 3rem
+	&-amount
+		padding-left: 2.8rem
+		position: relative
+		display: inline-block
+		margin-top: 2.5rem
+		line-height: 1.9rem
+		&:before
+			content: ' '
+			position: absolute
+			left: 0
+			top: 0
+			height: 2rem
+			width: 1.6rem
+			background: url(../img/quest/amount.svg) no-repeat
+			background-size: cover!important
+	&-blood
+		padding-left: 2.8rem
+		position: relative
+		display: inline-block
+		margin-top: 2.5rem
+		line-height: 1.9rem
+		&:before
+			content: ' '
+			position: absolute
+			left: 0
+			top: 0
+			height: 2.1rem
+			width: 1.6rem
+			background: url(../img/quest/blood.svg) no-repeat
+			background-size: cover!important
+	&-actor
+		padding-left: 2.8rem
+		position: relative
+		display: inline-block
+		margin-top: 1rem
+		line-height: 1.9rem
+		&:before
+			content: ' '
+			position: absolute
+			left: 0
+			top: 0
+			height: 2rem
+			width: 1.84rem
+			background: url(../img/quest/actor.svg) no-repeat
+			background-size: cover!important
+	&-time
+		padding-left: 3rem
+		position: relative
+		display: inline-block
+		margin-top: 1rem
+		line-height: 1.9rem
+		&:before
+			content: ' '
+			position: absolute
+			left: 0
+			top: 0
+			height: 2.1rem
+			width: 2.2rem
+			background: url(../img/quest/time.svg) no-repeat
+			background-size: cover!important
+	&-footer
+		position: absolute
+		width: 100%
+		height: 24rem
+		bottom: 0
+		z-index: 0
+	&-watch_all
+		text-align: center
+		color: #f05a29
+		font-size: 3.2rem
+		display: block
+		margin-top: 2rem
+		&:hover
+			text-decoration: none
+			color: #f05a29
+			span
+				border-bottom: 2px dashed transparent
+		span
+			border-bottom: 2px dashed #f05a29
+			transition: all 0.2s
+	&-age
+		position: absolute
+		bottom: 4rem
+		left: 3rem
+a.quest-more
+	position: absolute
+	display: inline-block
+	bottom: 2rem
+	right: 3.6rem
+	font-size: 1.6rem
+	color: #f05a29
+	border-bottom: 1px dashed #f05a29
+	transition: all 0.2s
+	font-weight: 700
+	&:hover
+		border-bottom: 1px dashed transparent
+		text-decoration: none
+	&:after
+		position: absolute
+		content: ''
+		background: url(../img/quest/arrow.svg) center center no-repeat
+		background-size: cover
+		height: 0.918rem
+		width: 0.53rem
+		display: inline-block
+		transition: all 0.15s
+		top: 0.7rem
+		right: -1.3rem
+a.quest-review
+	position: absolute
+	left: 0
+	bottom: 15.8rem
+	display: inline-block
+	font-size: 1.8rem
+	border-bottom: 1px dashed #333
+	text-decoration: none
+	color: #333333
+	margin-left: 3rem
+	margin-top: 0.1rem
+	transition: 0.3s
+	&:hover
+		border-bottom: #FFF dashed 1px
+//Фон
+.crest_small
+	position: absolute
+	width: 2.5rem
+	height: 2.5rem
+	&_1
+		top: 15rem
+		left: -4.2rem
+	&_2
+		top: 110rem
+		left: -8rem
+	&_3
+		top: 5rem
+		right: -3.5rem
+	&_4
+		top: 0
+		left: -15rem
+	img
+		transform: rotate(-60deg)
+		width: 2.5rem
+		height: 2.5rem
+.crest_big
+	position: absolute
+	width: 5rem
+	height: 5rem
+	&_1
+		top: 44rem
+		left: -14rem
+	&_2
+		top: 99rem
+		right: -14rem
+	img
+		transform: rotate(-30deg)
+		width: 5rem
+		height: 5rem
+.fon
+	position: relative
+.quest-banner
+	height: 43.8rem
+	z-index: 100
+	position: relative
+	overflow: hidden
+	background: #fff url(../img/quest/fon.png) center center no-repeat
+	background-size: cover
+	&_1
+		background: url(../img/quest/vk-b.svg) center center no-repeat
+	&_2
+		background: url(../img/quest/callback-b.svg) center center no-repeat
+	&_3
+		background: url(../img/quest/play-b.svg) center center no-repeat
+	&_all
+		height: 11.7rem
+		margin-top: 16rem
+		background-size: contain
+		font-size: 2.2rem
+		font-weight: 700
+		color: #FFF
+		text-align: center
+		transition: all 0.2s
+		display: block
+		&:hover
+			transform: scale(1.05)
+		span
+			display: inline-block
+			padding-left: 4.6rem
+			padding-right: 4.3rem
+			padding-top: 3rem
+			color: #FFF
+		a
+			outline: none
+	&-row
+		position: relative
+		overflow: hidden
+		height: 35rem
+.cloud
+	position: absolute
+	top: 12rem
+	left: 38rem
+	z-index: 150
+	img
+		width: 5rem
+		height: 2.1rem
+.arrow
+	position: absolute
+	top: 10rem
+	left: 67rem
+	img
+		width: 6.2rem
+		transform: rotate(-10deg)
+.circles
+	position: absolute
+	top: 28rem
+	right: -4rem
+	img
+		width: 6.9rem
+		height: 4.7rem
+.crestik
+	position: absolute
+	top: 10rem
+	right: 1rem
+	img
+		width: 2.5rem
+		height: 2.5rem
+		transform: rotate(-60deg)
+.quest-circle-1
+	position: absolute
+	top: 2rem
+	left: 5rem
+	width: 2.3rem
+	height: 2.3rem
+	border-radius: 50%
+	border: 2px solid #ce2d90
+.quest-circle-2
+	position: absolute
+	top: 60rem
+	right: -8rem
+	width: 7rem
+	height: 7rem
+	border-radius: 50%
+	box-shadow: 0 0 1.5rem 1rem rgba(255,223,223, 0.8)
+.quest-circles-1
+	position: absolute
+	top: 71rem
+	left: 2rem
+	img
+		width: 5rem
+		height: 4.5rem
+.quest-circles-2
+	position: absolute
+	top: 140rem
+	right: -20rem
+	img
+		width: 9.1rem
+		height: 8.2rem
+		transform: rotate(180deg)
+.quest-cir-tri-1
+	position: absolute
+	top: 1.5rem
+	left: 42rem
+	img
+		width: 8.2rem
+		height: 5.3rem
+		transform: rotate(-90deg)
+.quest-crest-1
+	position: absolute
+	top: -19rem
+	left: -20rem
+	img
+		width: 8.5rem
+		height: 8.5rem
+		transform: rotate(-20deg)
+.quest-shtuka-1
+	position: absolute
+	top: -120rem
+	right: -10rem
+	img
+		width: 6.3rem
+		height: 4.6rem
+.quest_2
+	margin-top: -2rem
+.quest_closed, .quest_soon
+	.quest-item
+		height: 25.5rem
+		padding-bottom: 0
+	.quest-img
+		height: calc(100% - 6rem)
+		z-index: 100
+		position: relative
+		img
+			width: 100%
+			height: auto
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+	.quest-inactive
+		position: absolute
+		top: 0
+		z-index: 400
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,0.35)
+	.quest-inactive-text
+		position: absolute
+		top: calc(50% - 3rem)
+		left: 50%
+		transform: translate(-50%,-50%)
+		font-size: 2rem
+		color: #fff
+		font-weight: 300
+		line-height: 2.5rem
+		img
+			width: 2.5rem
+			vertical-align: top
+	.quest-inactive-name
+		position: absolute
+		width: 100%
+		height: 6.7rem
+		line-height: 2rem
+		bottom: 0
+		font-size: 2.2rem
+		color: #333
+		font-weight: 700
+		padding: 1.7rem 2rem 0.5rem 2rem
+		background-color: #fff
+.quest_soon
+	.quest-inactive-text
+		color: #77bf88
+@media (min-width: 768px) and (max-width: 991px)
+	.quest-banner_all span
+		padding-left: 3.5rem
+@media (max-width: 767px)
+	.mobile-quest
+		position: relative
+		overflow: hidden
+		&-overlay
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,0.4)
+			border-top-left-radius: 1rem
+			border-top-right-radius: 1rem
+			z-index: 101
+		&-header
+			height: 12.4rem
+			padding: 0 0 0 2rem
+			font-size: 2.2rem
+			font-weight: 700
+			line-height: 12.4rem
+			img
+				height: 6.4rem
+				width: 6.4rem
+				margin-right: 1rem
+			a
+				color: #333
+				text-decoration: none
+		.mobile-quest-slider
+			position: relative
+			width: 100%
+			font-size: 0
+			border-bottom: 1px solid #dcdcdc
+			.swiper-slide
+				display: inline-block
+				position: relative
+				margin: 0 0.5rem 4rem 0.5rem
+				width: 28rem
+				vertical-align: top
+				border-radius: 1.5rem
+				box-shadow: 0 0 1.5rem 0rem rgba(0,0,0,0.15)
+				padding-bottom: 2.5rem
+				height: 33.5rem
+				a
+					color: #333
+					text-decoration: none
+					height: 18.6rem
+				h6
+					margin-top: 1.4rem
+					font-size: 1.8rem
+					font-weight: 700
+					color: #333
+					padding-left: 1.2rem
+					padding-right: 1.2rem
+					margin-bottom: 0.2rem
+					height: 4.2rem
+					line-height: 2rem
+		&-image
+			position: absolute
+			height: 18.6rem
+			width: auto
+			border-top-right-radius: 1.5rem
+			border-top-left-radius: 1.5rem
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			min-width: 100%
+			z-index: 100
+		&-price
+			position: absolute
+			top: 1rem
+			right: 0
+			max-width: 14rem
+			color: #FFF
+			font-weight: 700
+			font-size: 1.3rem
+			padding: 1rem 0.5rem 1rem 1rem
+			background: url(../img/quest/subprice.svg) no-repeat
+			background-size: cover
+			z-index: 200
+		&-banner
+			vertical-align: top
+			max-height: 23rem
+			position: relative
+			display: block
+			border-top-right-radius: 1.5rem
+			border-top-left-radius: 1.5rem
+			overflow: hidden
+		&-light_line
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 3.2rem
+			width: 100%
+			background-color: rgba(255,255,255,0.8)
+			line-height: 3.2rem
+			font-size: 1.5rem
+			color: #333
+			padding-left: 3rem
+			&:before
+				position: absolute
+				content: ' '
+				background: url(../img/mobile/players.svg) center center no-repeat
+				background-size: cover
+				width: 1.3rem
+				height: 1.4rem
+				bottom: 1rem
+				left: 1rem
+		&-footer
+			display: block
+			font-size: 0
+			height: 14.6rem!important
+			div:nth-of-type(1), div:nth-of-type(3):not(.quest-more)
+				width: 12.8rem
+				margin-left: 1.4rem
+				width: 12.8rem
+		&-video
+			width: 3rem
+			height: 3rem
+			display: block
+			margin-left: 0.3rem
+			margin-top: 0.3rem
+			background: url(../img/quest/video.svg) center center no-repeat
+			background-size: cover
+			&-bg
+				position: absolute
+				width: 3.6rem
+				height: 3.6rem
+				border-radius: 50%
+				background-color: rgba(0,0,0,0.5)
+				top: 14rem
+				left: 1.1rem
+				display: inline-block
+				z-index: 300
+		&-metro
+			font-size: 1.5rem
+			margin-top: 1.5rem
+			&_red
+				color: #ec2b2b
+			&_green
+				color: #1b8916
+			&_blue
+				color: #327ae7
+			&_purple
+				color: #991b9e
+		&-place
+			font-size: 1.5rem
+			font-weight: 300
+			padding-right: 2rem
+		&-timetable
+			height: 11rem
+			width: 30rem
+			margin: 0 auto
+			font-size: 2.6rem
+			font-weight: 700
+			background-size: 100% 100%	
+			overflow: visible
+			font-size: 1.8rem
+			color: #333
+			font-weight: 700
+			box-shadow: 0 0 2rem rgba(0,0,0,0.12)
+			border-radius: 1.5rem
+			margin-top: 7rem
+			line-height: 11rem
+			img
+				height: 6.1rem
+				width: 8.2rem
+				margin-right: 1rem
+			a
+				font-size: 1.6rem
+				color: #ff6600
+				text-decoration: none
+				&:after
+					content: ''
+					display: inline-block
+					width: 1rem
+					height: 1rem
+					background: url(../img/mobile/more.svg) center center no-repeat
+					background-size: cover
+			&-text
+				display: inline-block
+				width: 19rem
+				line-height: normal
+				vertical-align: middle
+		&-top
+			position: absolute
+			color: #FFF
+			top: 1.6rem
+			left: 1.2rem
+			font-size: 1.2rem
+			z-index: 200
+			&:before
+				content: ' '
+				display: inline-block
+				width: 0.9rem
+				height: 1.2rem
+				margin-right: 0.3rem
+				background: url(../img/quest/top.svg) center center no-repeat
+				background-size: cover
+	.mobile
+		&-Xgrey-2
+			top: 2rem
+			right: 2rem
+			position: absolute
+			img
+				width: 2.5rem
+				height: 2.5rem
+				transform: rotate(-30deg)
+		&-Xgrey-3
+			top: 51rem
+			right: -2.5rem
+			position: absolute
+			img
+				width: 6rem
+				height: 6rem
+				transform: rotate(-30deg)
+				opacity: 0.7
+		&-Xdark-1
+			top: 107rem
+			right: 3rem
+			position: absolute
+			img
+				width: 1.2rem
+				height: 1.2rem
+				transform: rotate(-30deg)
+		&-circles-1
+			top: 53rem
+			right: 9rem
+			position: absolute
+			img
+				width: 4rem
+				height: 4rem
+				transform: rotate(-135deg)
+		&-arrows-1
+			top: 96rem
+			left: 1rem
+			position: absolute
+			img
+				height: 2rem
+				width: 5.5rem
+				transform: rotate(-7deg)
+		&-clouds-1
+			top: 122rem
+			right: 0.2rem
+			position: absolute
+			img
+				height: 2rem
+				width: 5.5rem
+		&-clouds-1
+			top: 122rem
+			right: 0.2rem
+			position: absolute
+			img
+				height: 2rem
+				width: 5.5rem
+		&-clouds-2
+			bottom: 13rem
+			left: -1rem
+			position: absolute
+			img
+				height: 2rem
+				width: 5.5rem
+		&-tric-1
+			bottom: 81rem
+			left: 2rem
+			position: absolute
+			img
+				height: 2.8rem
+				width: 3.8rem
+		&-Xgrey-4
+			bottom: 53rem
+			right: 1rem
+			position: absolute
+			img
+				width: 1.3rem
+				height: 1.3rem
+				transform: rotate(-30deg)
+				opacity: 0.7
+		&-arrows-2
+			bottom: 58rem
+			right: 2rem
+			position: absolute
+			img
+				height: 2rem
+				width: 5.5rem
+				transform: rotate(180deg)
+		&-oblako-3
+			top: 0.5rem
+			left: 11rem
+			position: absolute
+			img
+				width: 3.2rem
+				height: 1.28rem
+				opacity: 0.9
+		&-Xgrey-10
+			top: 6rem
+			right: -1.8rem
+			position: absolute
+			img
+				width: 4rem
+				height: 4rem
+				transform: rotate(20deg)
+		&-circles-5
+			bottom: 12rem
+			right: 0rem
+			position: absolute
+			img
+				width: 4rem
+				height: 4rem
+				transform: rotate(-10deg)
+	.quest-amount, .quest-blood, .quest-actor, .quest-time
+		display: inline-block
+		font-size: 1.2rem
+		margin-top: 1rem
+		font-weight: 300
+		padding-left: 0
+		line-height: 1.4rem
+		width: auto
+		&:before
+			display: none
+		img
+			height: 1.4rem
+			left: auto
+			min-width: auto
+			vertical-align: top
+			margin-right: 0.5rem
+	.quest-more
+		font-size: 1.3rem
+		color: #f05a29
+		border-bottom: 1px dashed #f05a29
+		position: absolute
+		bottom: 1.5rem
+		right: 2.5rem
+		&:after
+			position: absolute
+			content: ''
+			background: url(../img/quest/arrow.svg) center center no-repeat
+			background-size: cover
+			height: 0.918rem
+			width: 0.53rem
+			display: inline-block
+			transition: all 0.15s
+			top: 0.65rem
+			right: -1rem
+	.quest-limit
+		font-size: 1.4rem
+		color: #888888
+		position: absolute
+		left: 1.4rem
+		bottom: 1.4rem
+	.quest-blood, .quest-time
+		margin-left: 0
+	#line1, #line2, #line3, #line4
+		&::-webkit-scrollbar-thumb
+			background-color: #FFF
+	.quest
+		h2
+			font-size: 2.6rem
+	.quest_closed, .quest_soon
+		display: none

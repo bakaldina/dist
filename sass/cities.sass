@@ -1,0 +1,54 @@
+.cities
+	h2
+		font-size: 4.1rem
+		font-weight: 700
+		text-align: center
+		padding-top: 4rem
+	&-block
+		background: url(../img/citiesbg.svg) center center no-repeat
+		background-size: cover
+		margin-top: 5rem
+		height: 35.5rem
+	&-city
+		display: inline-block
+		width: 30%
+		text-align: center
+		margin-top: 3rem
+		transition: all 0.2s
+		&:hover
+			transform: scale(1.1)
+			h4
+				border-bottom: 2px dashed transparent
+		h4
+			display: inline-block
+			color: #f05a29
+			text-decoration: none
+			border-bottom: 2px dashed #f05a29
+			font-size: 2.7rem
+			transition: all 0.2s
+		a
+			color: #333
+			font-weight: 300
+			font-size: 1.6rem
+			text-decoration: none
+	&-flex
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+.city-prev
+	text-align: center
+	margin-top: 4rem
+	margin-bottom: 4rem
+	h3
+		font-size: 3.2rem
+		a
+			color: #f05a29
+			border-bottom: 2px dashed #f05a29
+			transition: border-bottom 0.1s
+			&:hover
+				text-decoration: none
+				border-bottom: 2px dashed transparent
