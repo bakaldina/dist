@@ -1,4 +1,7 @@
-/*расписание*/
+body {
+    font-size: 16px;
+}
+    /*расписание*/
 .booking-header,.booking-header_city_schedule {
     font-size: 36px
 }
@@ -8,7 +11,6 @@
         text-align:left
     }
 }
-
 .booking-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -301,4 +303,37 @@
     border-bottom: 1px solid #cccccc;
     left: 0;
     bottom: 0
+}
+.tabs .nav-tabs>li.active>a, .tabs .nav-tabs>li.active>a:focus, .tabs .nav-tabs>li.active>a:hover {
+    color: #ff6600;
+    border: none;
+    border-bottom: 2px solid #ff6600;
+}
+.tabs .nav-tabs>li>a:hover {
+    border-color: #fff;
+}
+.tabs .nav>li>a:focus, .nav>li>a:hover {
+    background-color: #fff;
+}
+.tabs a {
+    color: #000;
+    font-size: 20px;
+}
+
+.rules {
+    max-width: 750px;
+    font-weight: 100;
+}
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.rules ul {
+    padding-left: 20px;
+}
+.price {
+    font-weight: 100;
+}
+.price .red {
+    color: #FC381E;
 }

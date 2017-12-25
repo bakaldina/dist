@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:locale" content="ru_RU"/>
-  	<meta property="og:type" content="website"/>
-  	<meta property="og:title" content="QuestQuest"/>
-  	<meta property="og:description" content="Описание страницы"/>
-  	<meta property="og:image" content="http://site.com/img/image_1.png"/>
-  	<meta property="og:url" content="http://site.com/page_1.html"/>
 
-    <title>QuestQuest</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/bootstrap1366.min.css">
-    <link rel="stylesheet" href="css/bootstrap.modal.min.css">
-    <link rel="stylesheet" href="css/bootstrap.animations.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="QuestQuest" />
+  <meta property="og:description" content="Описание страницы" />
+  <meta property="og:image" content="http://site.com/img/image_1.png" />
+  <meta property="og:url" content="http://site.com/page_1.html" />
+
+  <title>QuestQuest</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/bootstrap1366.min.css">
+  <link rel="stylesheet" href="css/bootstrap.modal.min.css">
+  <link rel="stylesheet" href="css/bootstrap.animations.min.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/newpage.css"/>
-  </head>
-  <body>
-  
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2 mobile_show">
-            <a href="#menu_mobile" data-toggle="collapse">
-              <img class="burger-button" src="img/mobile/burger.svg" alt="Меню">
-            </a>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/newpage.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 mobile_show">
+          <a href="#menu_mobile" data-toggle="collapse">
+            <img class="burger-button" src="img/mobile/burger.svg" alt="Меню">
+          </a>
+        </div>
+        <div class="col-xs-10 col-sm-4">
+          <div class="phone">
+            <span class="mobile_hide">Друг, звони в любое время:</span>
+            <a href="tel:+74993222940" rel="nofollow">+7 (499) 322-29-40</a>
           </div>
-          <div class="col-xs-10 col-sm-4">
-            <div class="phone"><span class="mobile_hide">Друг, звони в любое время:</span> <a href="tel:+74993222940" rel="nofollow">+7 (499) 322-29-40</a>
+        </div>
+        <div class="col-sm-5 social mobile_hide">
+          <span>И присоединяйся к нам в соцсетях</span>
+          <div class="social-links">
+            <ul>
+              <li>
+                <a rel="nofollow" href="https://vk.com/questmoskva">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/vk.svg">
+                    <img src="img/social/vk.png" alt="Вконтакте">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="https://www.instagram.com/questmoskva/">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/insta.svg">
+                    <img src="img/social/insta.png" alt="Instagram">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="https://www.youtube.com/channel/UCGzkaVUyMNy3gTzwPA96l3Q">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/youtube.svg">
+                    <img src="img/social/youtube.png" alt="Youtube">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="https://www.facebook.com/questquestru">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/fb.svg">
+                    <img src="img/social/fb.png" alt="Facebook">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="https://www.tripadvisor.ru/Attraction_Review-g298484-d10054176-Reviews-Quest_Quest-Moscow_Central_Russia.html">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/tripadv.svg">
+                    <img src="img/social/tripadv.png" alt="Tripadvisor">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="menu mobile_hide">
+    <div class="container">
+      <div class="row main-header">
+        <div class="col-xs-12 col-sm-3 main-logo">
+          <div class="main-logo-wrapper">
+            <a href="http://quest-quest.ru/">
+              <img class="logo" src="img/main/logo.svg" alt="QuestQuest">
+              <span class="logo-text mobile_show">Сеть квестов №1 в России</span>
+            </a>
+            <div class="region mobile_hide">
+              <a data-toggle="modal" data-target="#region" href="#">Санкт-Петербург
+                <img src="img/main/arrow.svg" alt="">
+              </a>
             </div>
           </div>
-          <div class="col-sm-5 social mobile_hide">
-            <span>И присоединяйся к нам в соцсетях</span>
-            <div class="social-links">
+          <div class="main-logo_text mobile_hide">
+            <a href="http://questquest.ru/">Сеть квестов №1 в России</a>
+          </div>
+        </div>
+        <nav id="nav-fixed" class="col-sm-9 mobile_hide">
+          <ul>
+            <li class="nav-phone">Друг, звони в любое время:
+              <a href="tel:+74993222940">+7 (499) 322-29-40</a>
+            </li>
+            <li class="nav_hide">
+              <a href="#" target="_blank">Что такое квест?</a>
+            </li>
+            <li>
+              <a href="#">Расписание</a>
+            </li>
+            <li>
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="nav_hide">
+              <a href="#">Подарочные карты</a>
+            </li>
+            <li class="nav_hide">
+              <a data-toggle="modal" data-target="#modal-open" href="#">Открыть квест</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li class="nav_show">
+              <a href="#">Видео</a>
+            </li>
+            <li class="nav_hide">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="social-links">
+
               <ul>
                 <li>
                   <a rel="nofollow" href="https://vk.com/questmoskva">
@@ -73,784 +175,1034 @@
                     </picture>
                   </a>
                 </li>
-                <li>
-                  <a rel="nofollow" href="https://www.tripadvisor.ru/Attraction_Review-g298484-d10054176-Reviews-Quest_Quest-Moscow_Central_Russia.html">
-                    <picture>
-                      <source type="image/svg+xml" srcset="img/social/tripadv.svg">
-                      <img src="img/social/tripadv.png" alt="Tripadvisor">
-                    </picture>
-                  </a>
-                </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="menu mobile_hide">
-      <div class="container">
-          <div class="row main-header">
-            <div class="col-xs-12 col-sm-3 main-logo">
-              <div class="main-logo-wrapper">
-                <a href="http://quest-quest.ru/">
-                    <img class="logo" src="img/main/logo.svg" alt="QuestQuest">
-                  <span class="logo-text mobile_show">Сеть квестов №1 в России</span>
-                </a>
-                <div class="region mobile_hide">
-                  <a data-toggle="modal" data-target="#region" href="#">Санкт-Петербург<img src="img/main/arrow.svg" alt=""></a>
-                </div>
-              </div>
-              <div class="main-logo_text mobile_hide">
-                <a href="http://questquest.ru/">Сеть квестов №1 в России</a>
-              </div>
-            </div>
-            <nav id="nav-fixed" class="col-sm-9 mobile_hide">
-                <ul >
-                    <li class="nav-phone">Друг, звони в любое время: <a href="tel:+74993222940">+7 (499) 322-29-40</a></li>
-                    <li class="nav_hide"><a href="#" target="_blank">Что такое квест?</a></li>
-                    <li><a href="#">Расписание</a></li>           
-                    <li><a href="#">Отзывы</a></li>
-                    <li class="nav_hide"><a href="#">Подарочные карты</a></li>
-                    <li class="nav_hide"><a data-toggle="modal" data-target="#modal-open" href="#">Открыть квест</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li class="nav_show"><a href="#">Видео</a></li>
-                    <li class="nav_hide"><a href="#">Контакты</a></li>
-                    <li class="social-links">
-            
-                        <ul>
-                            <li>
-                            <a rel="nofollow" href="https://vk.com/questmoskva">
-                                <picture>
-                                <source type="image/svg+xml" srcset="img/social/vk.svg">
-                                <img src="img/social/vk.png" alt="Вконтакте">
-                                </picture>
-                            </a>
-                            </li>
-                            <li>
-                            <a rel="nofollow" href="https://www.instagram.com/questmoskva/">
-                                <picture>
-                                <source type="image/svg+xml" srcset="img/social/insta.svg">
-                                <img src="img/social/insta.png" alt="Instagram">
-                                </picture>
-                            </a>
-                            </li>
-                            <li>
-                            <a rel="nofollow" href="https://www.youtube.com/channel/UCGzkaVUyMNy3gTzwPA96l3Q">
-                                <picture>
-                                <source type="image/svg+xml" srcset="img/social/youtube.svg">
-                                <img src="img/social/youtube.png" alt="Youtube">
-                                </picture>
-                            </a>
-                            </li>
-                            <li>
-                            <a rel="nofollow" href="https://www.facebook.com/questquestru">
-                                <picture>
-                                <source type="image/svg+xml" srcset="img/social/fb.svg">
-                                <img src="img/social/fb.png" alt="Facebook">
-                                </picture>
-                            </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="main-gift" href="#">
-                        <picture>
-                            <source type="image/svg+xml" srcset="img/main/gift.svg">
-                            <img class="gift" src="img/main/gift.png" alt="Подарок внутри">
-                        </picture>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-          </div>
-      </div>
-    </section>
-
-    <section class='quest-info'>
-      <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6" style="height:600px;">
-              <div class="breadcrumb">
-
-              </div>
-              <div class="quest-info__reviews">
-                  <div class="quest-info__review qi-review">
-                    <div class="qi-review__photo" style="background-image:url()"></div>
-                    <div class="qi-review__about" >
-                      Наталья
-                      8 августа
-                      <div class="feed-rating">
-                          <div class="feed-stars">
-                            <picture>
-                              <source type="image/svg+xml" srcset="img/feed/star.svg">
-                              <img src="img/feed/star.png" alt="Звезда">
-                            </picture>
-                            <picture>
-                              <source type="image/svg+xml" srcset="img/feed/star.svg">
-                              <img src="img/feed/star.png" alt="Звезда">
-                            </picture>
-                            <picture>
-                              <source type="image/svg+xml" srcset="img/feed/star.svg">
-                              <img src="img/feed/star.png" alt="Звезда">
-                            </picture>
-                            <picture>
-                              <source type="image/svg+xml" srcset="img/feed/star.svg">
-                              <img src="img/feed/star.png" alt="Звезда">
-                            </picture>
-                            <picture>
-                              <source type="image/svg+xml" srcset="img/feed/semistar.svg">
-                              <img src="img/feed/semistar.png" alt="Звезда">
-                            </picture>
-                          </div>
-                          <div class="feed-number">8 голосов</div>
-                        </div>
-                    </div>
-                    <div class="qi-review__phone">
-                      <span>89******1487</span>
-                    </div>
-                    <div class="qi-review__text" ></div>
-                  </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="nav-quest">
-                <div class="nav-quest__prev">
-                  Квест Потерянный Сигнал
-                </div>
-                <div class="nav-quest__next">
-                  Ловушка Многоликий Билли  
-                </div>
-              </div>
-              <div class="quest-info__picture">
-
-              </div>
-              <a class="bron bron--inline" href="#">Забронировать</a>
-            </div>
-          </div>
-      </div>
-    </section>
-
-    <!-- табы -->
-    <section class="tabs">
-      <div class="container">
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#Photo">Фото и видео</a></li>
-          <li><a data-toggle="tab" href="#Price">Цены и скидки</a></li>
-          <li><a data-toggle="tab" href="#Map">На карте</a></li>
-          <li><a data-toggle="tab" href="#GiftCard">Подарочная карта</a></li>
-          <li><a data-toggle="tab" href="#Rules">Правила</a></li>
-        </ul>
-        <div class="tab-content">
-          <div id="Photo" class="tab-pane fade in active">
-            <div class="photo__item photo__item--big" ></div>
-            <div class="photo__item"></div>
-            <div class="photo__item"></div>
-            <div class="photo__item">
-              смотреть больше>
-            </div>
-          </div>
-          <div id="Price" class="tab-pane fade">
-            <h3>Price</h3>
-            <p>Some content in menu 1.</p>
-          </div>
-          <div id="Map" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Some content in menu 2.</p>
-          </div>
-          <div id="GiftCard" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Some content in menu 1.</p>
-          </div>
-          <div id="Rules" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Some content in menu 2.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- расписание -->
-    <section class="shedule">
-        <div class="container">
-          <h3 class="booking-header" id="booking">Выберите дату и время своего приключения</h3>
-          <div class="booking-row">
-            <div class="booking-row-day">
-              <div class="booking-row-day--date">25 декабря, </div>
-              <div class="booking-row-day--name">понедельник</div>
-            </div>
-            <div class="booking-row-time-list">
-              <div class="booking-row-time-special-price">
-                <div class="booking-row-timeslots">
-                  <button class="booking-row-time disabled" data-datetime="2017-12-25T10:00:00+00:00" data-lmonth="декабря" data-price="4000.0">10:00</button>
-                  <button class="booking-row-time disabled" data-datetime="2017-12-25T12:00:00+00:00" data-lmonth="декабря" data-price="4000.0">12:00</button>
-                  <button class="booking-row-time disabled" data-datetime="2017-12-25T14:00:00+00:00" data-lmonth="декабря" data-price="4000.0">14:00</button>
-                  <button class="booking-row-time disabled" data-datetime="2017-12-25T16:00:00+00:00" data-lmonth="декабря" data-price="4000.0">16:00</button>
-                  <button class="booking-row-time disabled" data-datetime="2017-12-25T18:00:00+00:00" data-lmonth="декабря" data-price="4000.0">18:00</button>
-                  <button class="booking-row-time" data-datetime="2017-12-25T20:00:00+00:00" data-lmonth="декабря" data-price="4000.0">20:00</button>
-                </div>
-                <div class="booking-row-time-special-price-value">4000 ₽</div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <section id="quests" class="quest mobile_hide" style="margin-bottom:60px;">
-      <div class="container fon">
-        <div class="row quest-line">
-          <div class="col-sm-4">
-            <div class="quest-item">
-              <div class="quest-img"><a href="{quest}"><img src="img/quest/1.jpg" alt="Многоликий Билли"></a></div>
-              <span class="quest-top">
-                <a class="quest-cat" href="{category}">Детям</a>
+            </li>
+            <li>
+              <a class="main-gift" href="#">
                 <picture>
-                  <source type="image/svg+xml" srcset="img/quest/top.svg">
-                  <img src="img/quest/top.png" alt="ТОП-Квест">
-                </picture>ТОП-Квест
-              </span>
-              <div class="quest-price">От 1000 руб./чел.</div>
-              <div class="quest-video">
-                <div data-video-src="https://www.youtube.com/embed/RJHYuNGcKXM">
-                  <picture>
-                    <source type="image/svg+xml" srcset="img/quest/video.svg">
-                    <img src="img/quest/video.png" alt="Смотреть видео">
-                  </picture>
-                </div>
-              </div>
-              <a href="{quest}" class="quest-footer"></a>
-              <h5><a href="{quest}">Многоликий Билли Пираты карибских морей</a></h5>
-              <div class="quest-place"><span class="quest-place_green">ул. Гафури дом 27</span></div>
-              <a href="#" class="quest-review">15 отзывов</a>
-              <div class="quest-chars">
-                <span class="quest-amount">4-6 игроков</span>
-                <span class="quest-blood">Кровь</span>
-                <span class="quest-actor">Актер</span>
-                <span class="quest-time">60 минут</span>
-              </div>
-              <div class="quest-age">
-                18+
-              </div>
-              <a class="quest-more" href="#">Подробнее</a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="quest-item">
-              <div class="quest-img"><a href="{quest}"><img src="img/quest/2.jpg" alt="Многоликий Билли"></a></div>
-              <span class="quest-top">
-              <a class="quest-cat" href="{category}">Детям</a>
-              <picture>
-                <source type="image/svg+xml" srcset="img/quest/top.svg">
-                <img src="img/quest/top.png" alt="ТОП-Квест">
-              </picture>ТОП-Квест</span>
-              <div class="quest-price">От 600 р</div>
-              <div class="quest-video">
-                <div data-video-src="https://www.youtube.com/embed/RJHYuNGcKXM">
-                  <picture>
-                    <source type="image/svg+xml" srcset="img/quest/video.svg">
-                    <img src="img/quest/video.png" alt="Смотреть видео">
-                  </picture>
-                </div>
-              </div>
-              <a href="{quest}" class="quest-footer"></a>
-              <h5><a href="{quest}">Многоликий Билли</a></h5>
-              <div class="quest-place"><span class="quest-place_green">м. Маяковская</span></div>
-              <a href="#" class="quest-review">15 отзывов</a>
-              <div class="quest-chars">
-                <span class="quest-amount">4-6 игроков</span>
-                <span class="quest-blood">Кровь</span>
-                <span class="quest-actor">Актер</span>
-                <span class="quest-time">60 минут</span>
-              </div>
-              <a class="quest-more" href="#">Подробнее</a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="quest-item">
-              <div class="quest-img"><a href="{quest}"><img src="img/quest/3.jpg" alt="Многоликий Билли"></a></div>
-              <span class="quest-top">
-              <a class="quest-cat" href="{category}">Детям</a>
-              <picture>
-                <source type="image/svg+xml" srcset="img/quest/top.svg">
-                <img src="img/quest/top.png" alt="ТОП-Квест">
-              </picture>ТОП-Квест</span>
-              <div class="quest-price">От 600 р</div>
-              <div class="quest-video">
-                <div data-video-src="https://www.youtube.com/embed/RJHYuNGcKXM">
-                  <picture>
-                    <source type="image/svg+xml" srcset="img/quest/video.svg">
-                    <img src="img/quest/video.png" alt="Смотреть видео">
-                  </picture>
-                </div>
-              </div>
-              <a href="{quest}" class="quest-footer"></a>
-              <h5><a href="{quest}">Многоликий Билли</a></h5>
-              <div class="quest-place"><span class="quest-place_green">м. Маяковская</span></div>
-              <a href="#" class="quest-review">15 отзывов</a>
-              <div class="quest-chars">
-                <span class="quest-amount">4-6 игроков</span>
-                <span class="quest-blood">Кровь</span>
-                <span class="quest-actor">Актер</span>
-                <span class="quest-time">60 минут</span>
-              </div>
-              <a class="quest-more" href="#">Подробнее</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container footer">
-        <div class="row">
-          <div class="col-sm-4 mobile_hide">
-            <h5>Жанры квестов</h5>
-            <ul class="footer-ul-left">
-              <li><a href="#">Антуражные</a></li>
-              <li><a href="#">Страшные</a></li>
-              <li><a href="#">Лучший</a></li>
-              <li><a href="#">Для подростков</a></li>
-              <li><a href="#">Квест-экскурсии</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">С актерами</a></li>
-              <li><a href="#">Перфоманс</a></li>
-              <li><a href="#">Экшн</a></li>
-              <li><a href="#">Большой</a></li>
-              <li><a href="#">Для дня рождения</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2 mobile_hide">
-            <h5>Интересное</h5>
-            <ul>
-              <li><a href="#">Подарочные карты</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a target="_blank" href="#">Отзывы</a></li>
-              <li><a href="#">Карта</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2 mobile_hide">
-            <h5>Помощь</h5>
-            <ul class="mobile_hide">
-              <li><a href="#">Что такое квест</a></li>
-              <li><a href="#">Способы оплаты</a></li>
-              <li><a href="#">Разместить квест</a></li>
-              <li><a href="#">Открыть квест</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-4 footer-ul-right ">
-            <ul class="mobile_hide">
-              <li><a href="#">Публичная оферта</a></li>
-              <li><a href="#">Политика конфедициальности</a></li>
-              <li><a href="#">Согласие на обработку персональных данных</a></li>
-            </ul>
-            <div class="social-links">
-              <ul>
-                <li>
-                  <a rel="nofollow" href="#">
-                    <picture>
-                      <source type="image/svg+xml" srcset="img/social/vk.svg">
-                      <img src="img/social/vk.png" alt="Вконтакте">
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a rel="nofollow" href="#">
-                    <picture>
-                      <source type="image/svg+xml" srcset="img/social/insta.svg">
-                      <img src="img/social/insta.png" alt="Instagram">
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a rel="nofollow" href="#">
-                    <picture>
-                      <source type="image/svg+xml" srcset="img/social/youtube.svg">
-                      <img src="img/social/youtube.png" alt="Youtube">
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a rel="nofollow" href="#">
-                    <picture>
-                      <source type="image/svg+xml" srcset="img/social/fb.svg">
-                      <img src="img/social/fb.png" alt="Facebook">
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a rel="nofollow" href="#">
-                    <picture>
-                      <source type="image/svg+xml" srcset="img/social/tripadv.svg">
-                      <img src="img/social/tripadv.png" alt="Tripadvisor">
-                    </picture>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-app_store mobile_hide">
-              <a href="#">
-                <picture>
-                  <source type="image/svg+xml" srcset="img/footer/appstore.svg">
-                  <img src="img/footer/appstore.png" alt="Аппстор">
+                  <source type="image/svg+xml" srcset="img/main/gift.svg">
+                  <img class="gift" src="img/main/gift.png" alt="Подарок внутри">
                 </picture>
               </a>
-            </div>
-            <div class="footer-menu mobile_show">
-              <ul>
-                <li><a href="#">Квесты</a></li>
-                <li><a href="#">Расписание</a></li>
-                <li><a href="#">Другие развлечения</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Видео</a></li>
-                <li><a href="#">Подарочные карты</a></li>
-                <li><a href="#">Что такое квест?</a></li>
-              </ul>
-            </div>
-            <span>QuestQuest - сеть квестов №1 в России по количеству работающих квестов.</span>
-          </div>
-        </div>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </footer>
-    <div class="footer-call mobile_show">
-      <a href="tel:+74993222940" class="footer-call-cent">
-          <img src="img/footer/phone.svg" alt="Позвонить">
-        <div class="footer-call-text">Позвонить</div>
-      </a>
     </div>
-    <!-- 
-    <script src="js/rellax.min.js"></script> Плавающие штуки на фоне -->
-    <!-- <script>
-    var rellax = new Rellax('.rellax');
-    </script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/bootstrap.modal.min.js"></script><!-- Модалки -->
-    <script src="js/bootstrap.transitions.min.js"></script>
-    <script src="js/bootstrap.collapse.min.js"></script>
+  </section>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script><!-- Валидация форм -->
-    <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script><!--  Скрипты для основной версии -->
-    <script src="js/mobile.js"></script><!-- Для мобильной -->
+  <section class='quest-info'>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6" style="height:600px;">
+          <div class="breadcrumb">
 
-    <!-- Модалка региона -->
-      <div class="modal fade" id="region">
-        <div class="modal-dialog" role="document">
-	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="modal-content">
-            <h4>Выбрать город</h4>
-            <div id="region-cities" class="region-cities">
-              <a href="#"><span>АНижний Новгород</span></a>
-              <a href="#"><span>БНижний Новгород</span></a>
-              <a href="#"><span>ВНижний Новгород</span></a>
-              <a href="#"><span>ГНижний Новгород</span></a>
-              <a href="#"><span>ДНижний Новгород</span></a>
-              <a href="#"><span>ЕНижний Новгород</span></a>
-              <a href="#"><span>ЖНижний Новгород</span></a>
-              <a href="#"><span>ЗНижний Новгород</span></a>
-              <a href="#"><span>ИНижний Новгород</span></a>
-              <a href="#"><span>КНижний Новгород</span></a>
-              <a href="#"><span>ЛНижний Новгород</span></a>
-              <a href="#"><span>МНижний Новгород</span></a>
-              <a href="#"><span>ННижний Новгород</span></a>
-              <a href="#"><span>ОНижний Новгород</span></a>
-              <a href="#"><span>ПНижний Новгород</span></a>
-              <a href="#"><span>РНижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-              <a href="#"><span>Нижний Новгород</span></a>
-            </div>
-            <h4>Другие страны</h4>
-            <div class="region-countries">
-              <a href="#"><span>Беларусь</span></a>
-              <a href="#"><span>Казахстан</span></a>
-              <a href="#"><span>Беларусь</span></a>
-              <a href="#"><span>Беларусь</span></a>
-              <a href="#"><span>Беларусь</span></a>
-              <a href="#"><span>Беларусь</span></a>
-              <a href="#"><span>Беларусь</span></a>
-            </div>
           </div>
-        </div>
-      </div>
-    <!-- Модалка подписки -->
-      <div class="modal fade" id="modal-subscribe">
-        <div class="modal-dialog" role="document">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          	<span aria-hidden="true">&times;</span>
-          </button>
-          <div class="modal-content">            
-            <h4>Хочу получать спецпредложения и скидки первым!</h4>
-            <div class="modal-text">Мы уже отправили письмо, осталось всего-лишь подтвердить почту.</div>
-            <div class="modal-text">Кстати, присоединяйся к нам во Вконтакте :)</div>
-            <a class="modal-link_button" href="https://vk.com/questmoskva" target="_blank">Присоединиться в ВК</a>
-          </div>
-        </div>
-      </div>
-
-    <!-- Модалка обратного звонка -->
-      <div class="modal fade" id="modal-phone">
-        <div class="modal-dialog" role="document">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="modal-content">
-            <h4>Твое приключение в 1 клик</h4>
-            <div class="modal-text">Оставьте свой контактный номер телефона.<br>Наши операторы свяжутся с Вами и помогут выбрать приключение!</div>
-            <form id="form-phone">
-              <input placeholder="Ваш номер телефона" name="phone" type="tel">
-              <input id="modal-phone-button" type="submit" value="Заказать обратный звонок">
-              <div id="personal-phone-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
-              <div class="modal-personal-div">
-              	<input id="modal-phone-personal" checked type="checkbox" onchange="document.getElementById('modal-phone-button').disabled = !this.checked;document.getElementById('personal-phone-error').style.display = document.getElementById('personal-phone-error').style.display == 'none' ? 'block' : 'none';">
-  	            <label for="modal-phone-personal">Согласие на <a href="#">обработку</a> персональных данных</label></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    <!-- Модалка выбора карты -->
-      <div class="modal fade" id="modal-card">
-        <div class="modal-dialog" role="document">
-        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="modal-content">
-            <h4>Заказать карту</h4>
-            <div id="card-name" class="modal-card-chosen">Карта номиналом 1500 рублей</div>
-            <form id="form-card">
-              <div class="modal-card-inputs">
-                <p>1. Выберите способ Доставки</p>
-                <div class="modal-card-input_3">
-                  <input data-added-price="0" name="var-delivery" type="radio" value="1" id="delivery-self" checked>
-                  <label for="delivery-self">Самовывоз (+0 руб.)</label>
-                </div>
-                <div class="modal-card-input_3">
-                  <input data-added-price="0" name="var-delivery" type="radio" value="2" id="delivery-email">
-                  <label for="delivery-email">Электронный сертификат (+0 руб.) <br class="mobile_hide"><span>(будет выслан на Ваш email)</span></label>
-                </div>
-                <div class="modal-card-input_3">
-                  <input data-added-price="500" name="var-delivery" type="radio" value="3" id="delivery-mail">
-                  <label for="delivery-mail">Курьером (+ 500 руб.)</label>
-                </div>
-              </div>
-              <div class="modal-card-inputs">
-                <p>2. Выберите способ Оплаты</p>
-                <div class="modal-card-input_4">
-                  <input name="var-payment" type="radio" value="1" id="payment-card" checked>
-                  <label for="payment-card">
-                    <img src="img/payment/cards.png" alt="Visa, Mastercard">
-                  </label>
-                </div>
-                <div class="modal-card-input_4">
-                  <input name="var-payment" type="radio" value="2" id="payment-webmoney">
-                  <label for="payment-webmoney">
-                    <img src="img/payment/webmoney.png" alt="Webmoney">
-                  </label>
-                </div>
-                <div class="modal-card-input_4">
-                  <input name="var-payment" type="radio" value="3" id="payment-yandex">
-                  <label for="payment-yandex">
-                    <img src="img/payment/yandex.png" alt="Yandex Money">
-                  </label>
-                </div>
-                <div class="modal-card-input_4">
-                  <input name="var-payment" type="radio" value="4" id="payment-qiwi">
-                  <label for="payment-qiwi">
-                    <img src="img/payment/qiwi.png" alt="Qiwi">
-                  </label>
-                </div>
-              </div>
-              <div class="modal-card-footer">
-                <div class="modal-card-footer-inputs">
-                  <input name="email" type="email" placeholder="Email">
-                  <input name="phone" type="text" placeholder="Ваш номер">
-                  <input id="modal-card-button" type="submit" value="Оплатить">
-                </div>
-                <div class="modal-card-footer-text">
-                  <div class="modal-personal-div">
-                    <input id="modal-card-personal" checked type="checkbox" onchange="document.getElementById('modal-card-button').disabled = !this.checked;document.getElementById('personal-card-error').style.display = document.getElementById('personal-card-error').style.display == 'none' ? 'block' : 'none';">
-                    <label for="modal-card-personal"> Согласие на <a href="#">обработку</a> персональных данных</label>
+          <div class="quest-info__reviews">
+            <div class="quest-info__review qi-review">
+              <div class="qi-review__photo" style="background-image:url()"></div>
+              <div class="qi-review__about">
+                Наталья 8 августа
+                <div class="feed-rating">
+                  <div class="feed-stars">
+                    <picture>
+                      <source type="image/svg+xml" srcset="img/feed/star.svg">
+                      <img src="img/feed/star.png" alt="Звезда">
+                    </picture>
+                    <picture>
+                      <source type="image/svg+xml" srcset="img/feed/star.svg">
+                      <img src="img/feed/star.png" alt="Звезда">
+                    </picture>
+                    <picture>
+                      <source type="image/svg+xml" srcset="img/feed/star.svg">
+                      <img src="img/feed/star.png" alt="Звезда">
+                    </picture>
+                    <picture>
+                      <source type="image/svg+xml" srcset="img/feed/star.svg">
+                      <img src="img/feed/star.png" alt="Звезда">
+                    </picture>
+                    <picture>
+                      <source type="image/svg+xml" srcset="img/feed/semistar.svg">
+                      <img src="img/feed/semistar.png" alt="Звезда">
+                    </picture>
                   </div>
-                  <div class="modal-card-footer-sum">
-                    <div class="modal-card-footer-sum-left">
-                      Итоговая сумма:<br> <span>(без учета комиссии)</span>
-                    </div>
-                    <div class="modal-card-footer-sum-right">
-                        <span id="card-sum">1500</span><br>рублей
-                    </div>
-                  </div>
+                  <div class="feed-number">8 голосов</div>
                 </div>
               </div>
-              <div id="personal-card-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-    <!-- Открыть новый квест -->
-      <div class="modal fade" id="modal-open">
-        <div class="modal-dialog" role="document">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="modal-content">
-            <h4>Размещение квеста</h4>
-            <div class="modal-text">Подать заявку на добавление Вашего квеста на QuestQuest</div>
-            <form id="form-open">
-              <input placeholder="Телефон" name="phone" type="tel" id="modal-open-phone">
-              <input placeholder="Email" name="email" type="email" id="modal-open-email">
-              <input id="modal-open-button" type="submit" value="Подать заявку">
-              <div id="personal-open-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
-              <div class="modal-personal-div">
-              	<input id="modal-open-personal" checked type="checkbox" onchange="document.getElementById('modal-open-button').disabled = !this.checked;document.getElementById('personal-open-error').style.display = document.getElementById('personal-open-error').style.display == 'none' ? 'block' : 'none';"> 
-  	            <label for="modal-open-personal">Согласие на <a href="#">обработку</a> персональных данных</label>
-    	        </div>
-            </form>
-            <div class="modal-open-cloud">
-              <img src="img/bgi/clouds.svg" alt="">
-            </div>
-            <div class="modal-open-tric">
-              <img src="img/bgi/circle-triangle.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!-- Ваш город Москва? -->
-    <div class="modal fade" id="modal-identify">
-      <div class="modal-dialog" role="document">
-      	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-content">
-          
-          <h4>Ваш город - <span>Москва</span>. Верно?</h4>
-            <a class="modal-link_button" href="#">Да, капитан!</a>
-            <a class="modal-link_button" data-toggle="modal" data-target="#modal-choose-region" href="#">Нет</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Модалка выбора региона -->
-    <div class="modal fade" id="modal-choose-region">
-      <div class="modal-dialog" role="document">
-      	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-content">
-          
-          <h4>Пожалуйста, выберите Ваш город из списка</h4>
-            <select placeholder="Выберите город" class="select" name="region" id="modal-choose-select">
-              <option value="moskva">Москва</option>
-              <option value="moskva">Москва</option>
-              <option value="moskva">Москва</option>
-              <option value="moskva">Москва</option>
-              <option value="moskva">Москва</option>
-              <option value="moskva">Москва</option>
-            </select>
-            <input type="submit" value="Сохранить город">
-            <a href="#">Нет в списке/ Больше не показывать</a>
-            <div class="modal-choose-region-item-1">
-              <img src="img/bgi/circle-triangle.svg" alt="">
-            </div>
-            <div class="modal-choose-region-item-2">
-              <img src="img/bgi/X.svg" alt="">
-            </div>
-            <div class="modal-choose-region-item-3">
-              <img src="img/bgi/X.svg" alt="">
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Модалка скидки -->
-      <div class="modal fade" id="modal-discount">
-        <div class="modal-dialog" role="document">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="modal-content">
-            <div class="modal-discount-first-step">
-	            <h4>Постойте! Для вас скидка!</h4>
-	           
-	            <div class="modal-text">
-                Оставьте Ваш телефон сейчас и получите <span>скидку 100 руб.!</span><br>
-                Мы редко предлагаем подобные вещи,<br> это крупная удача.
+              <div class="qi-review__phone">
+                <span>89******1487</span>
               </div>
-	            <form id="form-open">
-		            <input placeholder="Телефон" name="phone" type="tel" id="modal-discount-phone">
-		            <input id="modal-discount-button" type="submit" value="Подать заявку">
-		            <div id="personal-discount-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
-		            <div class="modal-personal-div">
-		            	<input id="modal-discount-personal" checked type="checkbox" onchange="document.getElementById('modal-discount-button').disabled = !this.checked;document.getElementById('personal-discount-error').style.display = document.getElementById('personal-discount-error').style.display == 'none' ? 'block' : 'none';"> 
-		            <label for="modal-discount-personal">Согласие на <a href="#">обработку</a> персональных данных</label></div>
-		            <p class="modal-discount-thanks"><a href="#">Спасибо, но я не хочу получить скидку на квест.</a></p>
-	            </form>
-	            <img class="modal-discount-img mobile_hide" src="img/cat_s/entertaiments.svg" alt="Хухра">
+              <div class="qi-review__text"></div>
             </div>
-            <div class="modal-discount-second-step">
-	            <h4>Но мы же...</h4>
-	            <img class="modal-discount-second-image" src="img/discount.jpg" alt="Мем про скидку">
-	            <div class="modal-text">предложили скидку...</div>
-	            <a class="modal-link_button" href="#">Получить скидку</a>
-	            <p class="modal-discount-thanks"><a href="#">Спасибо, но я не хочу получить скидку на квест.</a></p>
-	            <div class="modal-open-cloud">
-	              <img src="img/bgi/clouds.svg" alt="">
-	            </div>
-	            <div class="modal-open-tric">
-	              <img src="img/bgi/circle-triangle.svg" alt="">
-	            </div>
-            </div>  
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="nav-quest">
+            <div class="nav-quest__prev">
+              Квест Потерянный Сигнал
+            </div>
+            <div class="nav-quest__next">
+              Ловушка Многоликий Билли
+            </div>
+          </div>
+          <div class="quest-info__picture">
+
+          </div>
+          <a class="bron bron--inline" href="#">Забронировать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- табы -->
+  <section class="tabs">
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a data-toggle="tab" href="#Photo">Фото и видео</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#Price">Цены и скидки</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#Shedule">Расписание</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#Map">На карте</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#GiftCard">Подарочная карта</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#Rules">Правила</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#Rating">Отзывы и рейтинг</a>
+        </li>
+
+      </ul>
+      <div class="tab-content">
+        <div id="Photo" class="tab-pane fade in active">
+          <div class="photo__item photo__item--big"></div>
+          <div class="photo__item"></div>
+          <div class="photo__item"></div>
+          <div class="photo__item">
+            смотреть больше>
+          </div>
+        </div>
+        <div id="Price" class="tab-pane fade price">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <h3>Будни</h3>
+                <p>Днем(до 17:00):
+                  <span class="red">2 500 pуб.</span>
+                </p>
+                <p>Вечером:
+                  <span class="red">3 500 pуб.</span>
+                </p>
+              </div>
+              <div class="col-sm-3">
+                <h3>Пятница</h3>
+                <p>Днем(до 17:00):
+                  <span class="red">3 500 pуб.</span>
+                </p>
+                <p>Вечером:
+                  <span class="red">4 500 pуб.</span>
+                </p>
+              </div>
+              <div class="col-sm-3">
+                <h3>Выходные</h3>
+                <p>В любое время:
+                  <span class="red">4 500 pуб.</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>Все стоимости указаны за команду 2-4 человека
+                  <br> Скидки и акции не суммируются!</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <h3>Карта в Москве</h3>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+          </div>
+        </div>
+        <div id="Map" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Some content in menu 2.</p>
+        </div>
+        <div id="GiftCard" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Some content in menu 1.</p>
+        </div>
+        <div id="Rules" class="tab-pane fade rules">
+          <h3>Запрещается</h3>
+          <ul>
+            <li>проходить игру лицам с хроническими заболеваниями сердечно - сосудистой системы и нервно-психическими расстройствами.</li>
+            <li>проносить с собой телефоны, смартфоны, фото и видеокамеры (фото и видеосъемка в квесте запрещены). Предметы остаются
+              в камере хранения перед квестом.</li>
+            <li>проходить игру в алкогольном опьянении.</li>
+          </ul>
+          <h3>Советуем</h3>
+          <p>Для удобства рекомендуем надеть комфортную обувь и одежду.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- расписание -->
+  <section class="shedule">
+    <div class="container">
+      <h3 class="booking-header" id="booking">Выберите дату и время своего приключения</h3>
+      <div class="booking-row">
+        <div class="booking-row-day">
+          <div class="booking-row-day--date">25 декабря, </div>
+          <div class="booking-row-day--name">понедельник</div>
+        </div>
+        <div class="booking-row-time-list">
+          <div class="booking-row-time-special-price">
+            <div class="booking-row-timeslots">
+              <button class="booking-row-time disabled" data-datetime="2017-12-25T10:00:00+00:00" data-lmonth="декабря" data-price="4000.0">10:00</button>
+              <button class="booking-row-time disabled" data-datetime="2017-12-25T12:00:00+00:00" data-lmonth="декабря" data-price="4000.0">12:00</button>
+              <button class="booking-row-time disabled" data-datetime="2017-12-25T14:00:00+00:00" data-lmonth="декабря" data-price="4000.0">14:00</button>
+              <button class="booking-row-time disabled" data-datetime="2017-12-25T16:00:00+00:00" data-lmonth="декабря" data-price="4000.0">16:00</button>
+              <button class="booking-row-time disabled" data-datetime="2017-12-25T18:00:00+00:00" data-lmonth="декабря" data-price="4000.0">18:00</button>
+              <button class="booking-row-time" data-datetime="2017-12-25T20:00:00+00:00" data-lmonth="декабря" data-price="4000.0">20:00</button>
+            </div>
+            <div class="booking-row-time-special-price-value">4000 ₽</div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-    <!-- Коллапс на мобилке -->
-      <div class="collapse mobile_show" id="menu_mobile">
-        <div class="burger_menu">
-          <div class="burger-header">
-            <a href="tel:+74993222940">+7 (499) 322-29-40</a>
-            <a href="#menu_mobile" data-toggle="collapse">
-              <img class="burger-close" src="img/mobile/close.svg" alt="">
+  <section id="quests" class="quest mobile_hide" style="margin-bottom:60px;">
+    <div class="container fon">
+      <div class="row quest-line">
+        <div class="col-sm-4">
+          <div class="quest-item">
+            <div class="quest-img">
+              <a href="{quest}">
+                <img src="img/quest/1.jpg" alt="Многоликий Билли">
+              </a>
+            </div>
+            <span class="quest-top">
+              <a class="quest-cat" href="{category}">Детям</a>
+              <picture>
+                <source type="image/svg+xml" srcset="img/quest/top.svg">
+                <img src="img/quest/top.png" alt="ТОП-Квест">
+              </picture>ТОП-Квест
+            </span>
+            <div class="quest-price">От 1000 руб./чел.</div>
+            <div class="quest-video">
+              <div data-video-src="https://www.youtube.com/embed/RJHYuNGcKXM">
+                <picture>
+                  <source type="image/svg+xml" srcset="img/quest/video.svg">
+                  <img src="img/quest/video.png" alt="Смотреть видео">
+                </picture>
+              </div>
+            </div>
+            <a href="{quest}" class="quest-footer"></a>
+            <h5>
+              <a href="{quest}">Многоликий Билли Пираты карибских морей</a>
+            </h5>
+            <div class="quest-place">
+              <span class="quest-place_green">ул. Гафури дом 27</span>
+            </div>
+            <a href="#" class="quest-review">15 отзывов</a>
+            <div class="quest-chars">
+              <span class="quest-amount">4-6 игроков</span>
+              <span class="quest-blood">Кровь</span>
+              <span class="quest-actor">Актер</span>
+              <span class="quest-time">60 минут</span>
+            </div>
+            <div class="quest-age">
+              18+
+            </div>
+            <a class="quest-more" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="quest-item">
+            <div class="quest-img">
+              <a href="{quest}">
+                <img src="img/quest/2.jpg" alt="Многоликий Билли">
+              </a>
+            </div>
+            <span class="quest-top">
+              <a class="quest-cat" href="{category}">Детям</a>
+              <picture>
+                <source type="image/svg+xml" srcset="img/quest/top.svg">
+                <img src="img/quest/top.png" alt="ТОП-Квест">
+              </picture>ТОП-Квест</span>
+            <div class="quest-price">От 600 р</div>
+            <div class="quest-video">
+              <div data-video-src="https://www.youtube.com/embed/RJHYuNGcKXM">
+                <picture>
+                  <source type="image/svg+xml" srcset="img/quest/video.svg">
+                  <img src="img/quest/video.png" alt="Смотреть видео">
+                </picture>
+              </div>
+            </div>
+            <a href="{quest}" class="quest-footer"></a>
+            <h5>
+              <a href="{quest}">Многоликий Билли</a>
+            </h5>
+            <div class="quest-place">
+              <span class="quest-place_green">м. Маяковская</span>
+            </div>
+            <a href="#" class="quest-review">15 отзывов</a>
+            <div class="quest-chars">
+              <span class="quest-amount">4-6 игроков</span>
+              <span class="quest-blood">Кровь</span>
+              <span class="quest-actor">Актер</span>
+              <span class="quest-time">60 минут</span>
+            </div>
+            <a class="quest-more" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="quest-item">
+            <div class="quest-img">
+              <a href="{quest}">
+                <img src="img/quest/3.jpg" alt="Многоликий Билли">
+              </a>
+            </div>
+            <span class="quest-top">
+              <a class="quest-cat" href="{category}">Детям</a>
+              <picture>
+                <source type="image/svg+xml" srcset="img/quest/top.svg">
+                <img src="img/quest/top.png" alt="ТОП-Квест">
+              </picture>ТОП-Квест</span>
+            <div class="quest-price">От 600 р</div>
+            <div class="quest-video">
+              <div data-video-src="https://www.youtube.com/embed/RJHYuNGcKXM">
+                <picture>
+                  <source type="image/svg+xml" srcset="img/quest/video.svg">
+                  <img src="img/quest/video.png" alt="Смотреть видео">
+                </picture>
+              </div>
+            </div>
+            <a href="{quest}" class="quest-footer"></a>
+            <h5>
+              <a href="{quest}">Многоликий Билли</a>
+            </h5>
+            <div class="quest-place">
+              <span class="quest-place_green">м. Маяковская</span>
+            </div>
+            <a href="#" class="quest-review">15 отзывов</a>
+            <div class="quest-chars">
+              <span class="quest-amount">4-6 игроков</span>
+              <span class="quest-blood">Кровь</span>
+              <span class="quest-actor">Актер</span>
+              <span class="quest-time">60 минут</span>
+            </div>
+            <a class="quest-more" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <div class="row">
+        <div class="col-sm-4 mobile_hide">
+          <h5>Жанры квестов</h5>
+          <ul class="footer-ul-left">
+            <li>
+              <a href="#">Антуражные</a>
+            </li>
+            <li>
+              <a href="#">Страшные</a>
+            </li>
+            <li>
+              <a href="#">Лучший</a>
+            </li>
+            <li>
+              <a href="#">Для подростков</a>
+            </li>
+            <li>
+              <a href="#">Квест-экскурсии</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">С актерами</a>
+            </li>
+            <li>
+              <a href="#">Перфоманс</a>
+            </li>
+            <li>
+              <a href="#">Экшн</a>
+            </li>
+            <li>
+              <a href="#">Большой</a>
+            </li>
+            <li>
+              <a href="#">Для дня рождения</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-2 mobile_hide">
+          <h5>Интересное</h5>
+          <ul>
+            <li>
+              <a href="#">Подарочные карты</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li>
+              <a target="_blank" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a href="#">Карта</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-2 mobile_hide">
+          <h5>Помощь</h5>
+          <ul class="mobile_hide">
+            <li>
+              <a href="#">Что такое квест</a>
+            </li>
+            <li>
+              <a href="#">Способы оплаты</a>
+            </li>
+            <li>
+              <a href="#">Разместить квест</a>
+            </li>
+            <li>
+              <a href="#">Открыть квест</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 footer-ul-right ">
+          <ul class="mobile_hide">
+            <li>
+              <a href="#">Публичная оферта</a>
+            </li>
+            <li>
+              <a href="#">Политика конфедициальности</a>
+            </li>
+            <li>
+              <a href="#">Согласие на обработку персональных данных</a>
+            </li>
+          </ul>
+          <div class="social-links">
+            <ul>
+              <li>
+                <a rel="nofollow" href="#">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/vk.svg">
+                    <img src="img/social/vk.png" alt="Вконтакте">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/insta.svg">
+                    <img src="img/social/insta.png" alt="Instagram">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/youtube.svg">
+                    <img src="img/social/youtube.png" alt="Youtube">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/fb.svg">
+                    <img src="img/social/fb.png" alt="Facebook">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#">
+                  <picture>
+                    <source type="image/svg+xml" srcset="img/social/tripadv.svg">
+                    <img src="img/social/tripadv.png" alt="Tripadvisor">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-app_store mobile_hide">
+            <a href="#">
+              <picture>
+                <source type="image/svg+xml" srcset="img/footer/appstore.svg">
+                <img src="img/footer/appstore.png" alt="Аппстор">
+              </picture>
             </a>
           </div>
-          <ul>
-            <li><a href="#" data-toggle="modal" data-target="#region"><img src="img/burger_icons/1.svg" alt="">Выбрать город</a></li>
-            <li><a href="#"><img src="img/burger_icons/2.svg" alt="">Квесты</a></li>
-            <li><a href="#"><img src="img/burger_icons/3.svg" alt="">Расписание</a></li>
-            <li><a href="#"><img src="img/burger_icons/4.svg" alt="">Отзывы</a></li>
-            <li><a href="#"><img src="img/burger_icons/5.svg" alt="">Видео</a></li>
-          </ul>
-          <ul>
-            <li><a href="#"><img src="img/burger_icons/6.svg" alt="">Другие развлечения</a></li>
-            <li><a href="#"><img src="img/burger_icons/7.svg" alt="">Подарочные карт</a></li>
-            <li><a href="#"><img src="img/burger_icons/8.svg" alt="">Что такое квест?</a></li>
-          </ul>
+          <div class="footer-menu mobile_show">
+            <ul>
+              <li>
+                <a href="#">Квесты</a>
+              </li>
+              <li>
+                <a href="#">Расписание</a>
+              </li>
+              <li>
+                <a href="#">Другие развлечения</a>
+              </li>
+              <li>
+                <a href="#">Отзывы</a>
+              </li>
+              <li>
+                <a href="#">Видео</a>
+              </li>
+              <li>
+                <a href="#">Подарочные карты</a>
+              </li>
+              <li>
+                <a href="#">Что такое квест?</a>
+              </li>
+            </ul>
+          </div>
+          <span>QuestQuest - сеть квестов №1 в России по количеству работающих квестов.</span>
         </div>
       </div>
-  </body>
+    </div>
+  </footer>
+  <div class="footer-call mobile_show">
+    <a href="tel:+74993222940" class="footer-call-cent">
+      <img src="img/footer/phone.svg" alt="Позвонить">
+      <div class="footer-call-text">Позвонить</div>
+    </a>
+  </div>
+  <!-- 
+    <script src="js/rellax.min.js"></script> Плавающие штуки на фоне -->
+  <!-- <script>
+    var rellax = new Rellax('.rellax');
+    </script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.modal.min.js"></script>
+  <!-- Модалки -->
+  <script src="js/bootstrap.transitions.min.js"></script>
+  <script src="js/bootstrap.collapse.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <!-- Валидация форм -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--  Скрипты для основной версии -->
+  <script src="js/mobile.js"></script>
+  <!-- Для мобильной -->
+
+  <!-- Модалка региона -->
+  <div class="modal fade" id="region">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+        <h4>Выбрать город</h4>
+        <div id="region-cities" class="region-cities">
+          <a href="#">
+            <span>АНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>БНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ВНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ГНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ДНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ЕНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ЖНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ЗНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ИНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>КНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ЛНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>МНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ННижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ОНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>ПНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>РНижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+          <a href="#">
+            <span>Нижний Новгород</span>
+          </a>
+        </div>
+        <h4>Другие страны</h4>
+        <div class="region-countries">
+          <a href="#">
+            <span>Беларусь</span>
+          </a>
+          <a href="#">
+            <span>Казахстан</span>
+          </a>
+          <a href="#">
+            <span>Беларусь</span>
+          </a>
+          <a href="#">
+            <span>Беларусь</span>
+          </a>
+          <a href="#">
+            <span>Беларусь</span>
+          </a>
+          <a href="#">
+            <span>Беларусь</span>
+          </a>
+          <a href="#">
+            <span>Беларусь</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Модалка подписки -->
+  <div class="modal fade" id="modal-subscribe">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+        <h4>Хочу получать спецпредложения и скидки первым!</h4>
+        <div class="modal-text">Мы уже отправили письмо, осталось всего-лишь подтвердить почту.</div>
+        <div class="modal-text">Кстати, присоединяйся к нам во Вконтакте :)</div>
+        <a class="modal-link_button" href="https://vk.com/questmoskva" target="_blank">Присоединиться в ВК</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модалка обратного звонка -->
+  <div class="modal fade" id="modal-phone">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+        <h4>Твое приключение в 1 клик</h4>
+        <div class="modal-text">Оставьте свой контактный номер телефона.
+          <br>Наши операторы свяжутся с Вами и помогут выбрать приключение!</div>
+        <form id="form-phone">
+          <input placeholder="Ваш номер телефона" name="phone" type="tel">
+          <input id="modal-phone-button" type="submit" value="Заказать обратный звонок">
+          <div id="personal-phone-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
+          <div class="modal-personal-div">
+            <input id="modal-phone-personal" checked type="checkbox" onchange="document.getElementById('modal-phone-button').disabled = !this.checked;document.getElementById('personal-phone-error').style.display = document.getElementById('personal-phone-error').style.display == 'none' ? 'block' : 'none';">
+            <label for="modal-phone-personal">Согласие на
+              <a href="#">обработку</a> персональных данных</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Модалка выбора карты -->
+  <div class="modal fade" id="modal-card">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+        <h4>Заказать карту</h4>
+        <div id="card-name" class="modal-card-chosen">Карта номиналом 1500 рублей</div>
+        <form id="form-card">
+          <div class="modal-card-inputs">
+            <p>1. Выберите способ Доставки</p>
+            <div class="modal-card-input_3">
+              <input data-added-price="0" name="var-delivery" type="radio" value="1" id="delivery-self" checked>
+              <label for="delivery-self">Самовывоз (+0 руб.)</label>
+            </div>
+            <div class="modal-card-input_3">
+              <input data-added-price="0" name="var-delivery" type="radio" value="2" id="delivery-email">
+              <label for="delivery-email">Электронный сертификат (+0 руб.)
+                <br class="mobile_hide">
+                <span>(будет выслан на Ваш email)</span>
+              </label>
+            </div>
+            <div class="modal-card-input_3">
+              <input data-added-price="500" name="var-delivery" type="radio" value="3" id="delivery-mail">
+              <label for="delivery-mail">Курьером (+ 500 руб.)</label>
+            </div>
+          </div>
+          <div class="modal-card-inputs">
+            <p>2. Выберите способ Оплаты</p>
+            <div class="modal-card-input_4">
+              <input name="var-payment" type="radio" value="1" id="payment-card" checked>
+              <label for="payment-card">
+                <img src="img/payment/cards.png" alt="Visa, Mastercard">
+              </label>
+            </div>
+            <div class="modal-card-input_4">
+              <input name="var-payment" type="radio" value="2" id="payment-webmoney">
+              <label for="payment-webmoney">
+                <img src="img/payment/webmoney.png" alt="Webmoney">
+              </label>
+            </div>
+            <div class="modal-card-input_4">
+              <input name="var-payment" type="radio" value="3" id="payment-yandex">
+              <label for="payment-yandex">
+                <img src="img/payment/yandex.png" alt="Yandex Money">
+              </label>
+            </div>
+            <div class="modal-card-input_4">
+              <input name="var-payment" type="radio" value="4" id="payment-qiwi">
+              <label for="payment-qiwi">
+                <img src="img/payment/qiwi.png" alt="Qiwi">
+              </label>
+            </div>
+          </div>
+          <div class="modal-card-footer">
+            <div class="modal-card-footer-inputs">
+              <input name="email" type="email" placeholder="Email">
+              <input name="phone" type="text" placeholder="Ваш номер">
+              <input id="modal-card-button" type="submit" value="Оплатить">
+            </div>
+            <div class="modal-card-footer-text">
+              <div class="modal-personal-div">
+                <input id="modal-card-personal" checked type="checkbox" onchange="document.getElementById('modal-card-button').disabled = !this.checked;document.getElementById('personal-card-error').style.display = document.getElementById('personal-card-error').style.display == 'none' ? 'block' : 'none';">
+                <label for="modal-card-personal"> Согласие на
+                  <a href="#">обработку</a> персональных данных</label>
+              </div>
+              <div class="modal-card-footer-sum">
+                <div class="modal-card-footer-sum-left">
+                  Итоговая сумма:
+                  <br>
+                  <span>(без учета комиссии)</span>
+                </div>
+                <div class="modal-card-footer-sum-right">
+                  <span id="card-sum">1500</span>
+                  <br>рублей
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="personal-card-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Открыть новый квест -->
+  <div class="modal fade" id="modal-open">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+        <h4>Размещение квеста</h4>
+        <div class="modal-text">Подать заявку на добавление Вашего квеста на QuestQuest</div>
+        <form id="form-open">
+          <input placeholder="Телефон" name="phone" type="tel" id="modal-open-phone">
+          <input placeholder="Email" name="email" type="email" id="modal-open-email">
+          <input id="modal-open-button" type="submit" value="Подать заявку">
+          <div id="personal-open-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
+          <div class="modal-personal-div">
+            <input id="modal-open-personal" checked type="checkbox" onchange="document.getElementById('modal-open-button').disabled = !this.checked;document.getElementById('personal-open-error').style.display = document.getElementById('personal-open-error').style.display == 'none' ? 'block' : 'none';">
+            <label for="modal-open-personal">Согласие на
+              <a href="#">обработку</a> персональных данных</label>
+          </div>
+        </form>
+        <div class="modal-open-cloud">
+          <img src="img/bgi/clouds.svg" alt="">
+        </div>
+        <div class="modal-open-tric">
+          <img src="img/bgi/circle-triangle.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ваш город Москва? -->
+  <div class="modal fade" id="modal-identify">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+
+        <h4>Ваш город -
+          <span>Москва</span>. Верно?</h4>
+        <a class="modal-link_button" href="#">Да, капитан!</a>
+        <a class="modal-link_button" data-toggle="modal" data-target="#modal-choose-region" href="#">Нет</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модалка выбора региона -->
+  <div class="modal fade" id="modal-choose-region">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+
+        <h4>Пожалуйста, выберите Ваш город из списка</h4>
+        <select placeholder="Выберите город" class="select" name="region" id="modal-choose-select">
+          <option value="moskva">Москва</option>
+          <option value="moskva">Москва</option>
+          <option value="moskva">Москва</option>
+          <option value="moskva">Москва</option>
+          <option value="moskva">Москва</option>
+          <option value="moskva">Москва</option>
+        </select>
+        <input type="submit" value="Сохранить город">
+        <a href="#">Нет в списке/ Больше не показывать</a>
+        <div class="modal-choose-region-item-1">
+          <img src="img/bgi/circle-triangle.svg" alt="">
+        </div>
+        <div class="modal-choose-region-item-2">
+          <img src="img/bgi/X.svg" alt="">
+        </div>
+        <div class="modal-choose-region-item-3">
+          <img src="img/bgi/X.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модалка скидки -->
+  <div class="modal fade" id="modal-discount">
+    <div class="modal-dialog" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-content">
+        <div class="modal-discount-first-step">
+          <h4>Постойте! Для вас скидка!</h4>
+
+          <div class="modal-text">
+            Оставьте Ваш телефон сейчас и получите
+            <span>скидку 100 руб.!</span>
+            <br> Мы редко предлагаем подобные вещи,
+            <br> это крупная удача.
+          </div>
+          <form id="form-open">
+            <input placeholder="Телефон" name="phone" type="tel" id="modal-discount-phone">
+            <input id="modal-discount-button" type="submit" value="Подать заявку">
+            <div id="personal-discount-error" class="personal-error" style="display:none">Вы должны согласиться на обработку персональных данных</div>
+            <div class="modal-personal-div">
+              <input id="modal-discount-personal" checked type="checkbox" onchange="document.getElementById('modal-discount-button').disabled = !this.checked;document.getElementById('personal-discount-error').style.display = document.getElementById('personal-discount-error').style.display == 'none' ? 'block' : 'none';">
+              <label for="modal-discount-personal">Согласие на
+                <a href="#">обработку</a> персональных данных</label>
+            </div>
+            <p class="modal-discount-thanks">
+              <a href="#">Спасибо, но я не хочу получить скидку на квест.</a>
+            </p>
+          </form>
+          <img class="modal-discount-img mobile_hide" src="img/cat_s/entertaiments.svg" alt="Хухра">
+        </div>
+        <div class="modal-discount-second-step">
+          <h4>Но мы же...</h4>
+          <img class="modal-discount-second-image" src="img/discount.jpg" alt="Мем про скидку">
+          <div class="modal-text">предложили скидку...</div>
+          <a class="modal-link_button" href="#">Получить скидку</a>
+          <p class="modal-discount-thanks">
+            <a href="#">Спасибо, но я не хочу получить скидку на квест.</a>
+          </p>
+          <div class="modal-open-cloud">
+            <img src="img/bgi/clouds.svg" alt="">
+          </div>
+          <div class="modal-open-tric">
+            <img src="img/bgi/circle-triangle.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Коллапс на мобилке -->
+  <div class="collapse mobile_show" id="menu_mobile">
+    <div class="burger_menu">
+      <div class="burger-header">
+        <a href="tel:+74993222940">+7 (499) 322-29-40</a>
+        <a href="#menu_mobile" data-toggle="collapse">
+          <img class="burger-close" src="img/mobile/close.svg" alt="">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#region">
+            <img src="img/burger_icons/1.svg" alt="">Выбрать город</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/2.svg" alt="">Квесты</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/3.svg" alt="">Расписание</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/4.svg" alt="">Отзывы</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/5.svg" alt="">Видео</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/6.svg" alt="">Другие развлечения</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/7.svg" alt="">Подарочные карт</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/burger_icons/8.svg" alt="">Что такое квест?</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>
