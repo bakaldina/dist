@@ -38,6 +38,9 @@
     color: #888888;
     border-bottom: 1px dashed #888888;
 }
+.feed-stars-white {
+    filter: brightness(0) invert(1);
+}
   .rating-marker {
     color: #fff;
     max-width: 520px;
@@ -80,6 +83,22 @@
     text-transform: uppercase;
     padding: 0;
   }
+  .rating-marker__number{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 110px;
+}
+.rating-marker__number .numb{
+    font-size: 77px;
+    line-height: 66px;
+}
+.rating-marker__numbertext{
+    width: calc(100% - 150px);
+    display: inline-block;
+    vertical-align: top;
+    text-align:  left;
+}
   .white {
       color: #fff;
   }
