@@ -40,21 +40,51 @@
 }
 .feed-stars-white {
     filter: brightness(0) invert(1);
+} 
+
+.feed-stars-grey {
+    filter: grayscale(1);
+    display: flex;
+    height: 10px;
+    padding: 0 0 0 2rem;
+}
+.feed-stars-grey img {
+    width: 10px;
+    height: 10px;
+}
+section.info.row {
+    max-width: 100%;
+}
+.text-usually {
+    font-weight: 100;
+    font-size: 18px;
+    vertical-align: middle;
 }
   .rating-marker {
     color: #fff;
     max-width: 520px;
     min-height: 360px;
     background-color: #242424;
-    padding: 40px 2rem;
+    padding: 40px 0;
     text-align: center;
     font-size: 18px;
+    overflow: hidden;
     line-height: 30px;
     font-weight: 100;
     font-family: "Roboto Slab", tahoma, serif;
     margin-bottom: 30px;
   }
-
+    .rating-marker .progress{
+        background-color: #444444;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+    .feed-stars-grey picture {
+        height: 10px!important;
+    }
+    .rating-marker .progress-bar{
+        background-color: #949494;
+    }
   .rating-marker__stat span {
     font-size: 36px;
   }
@@ -72,6 +102,9 @@
     color: #939292;
     padding-bottom:  10px;
   }
+  .grey1 {
+    color: #939292;
+  }
   .comment {
     color: #2281d2;
     width: 190px;
@@ -88,16 +121,20 @@
     vertical-align: top;
     text-align: center;
     width: 110px;
+    margin-bottom: 20px;
 }
 .rating-marker__number .numb{
     font-size: 77px;
     line-height: 66px;
 }
 .rating-marker__numbertext{
-    width: calc(100% - 150px);
+    width: calc(100% - 115px);
     display: inline-block;
     vertical-align: top;
     text-align:  left;
+}
+.stars {
+    margin-bottom: 35px;
 }
   .white {
       color: #fff;
