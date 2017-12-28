@@ -1,15 +1,7 @@
-<<<<<<< Updated upstream
 body {
     font-size: 16px;
 }
     /*расписание*/
-=======
-
-/*вкладки*/
-
-
-/*расписание*/
->>>>>>> Stashed changes
 .booking-header,.booking-header_city_schedule {
     font-size: 36px
 }
@@ -209,7 +201,7 @@ body {
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-direction: row;
+    flex-disection: row;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
